@@ -10,4 +10,4 @@ func _process(delta: float) -> void:
 	transform.basis = Basis(current_quat.slerp(target_quat, delta*speed))
 
 	# Lerp position
-	position = lerp(position, target.global_position, delta * speed)
+	position = lerp(position, target.global_position, delta * speed*(1+Global.player.speed*0.1))
