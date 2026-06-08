@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dqi13cp7ycv4i"]
+
+[ext_resource type="PackedScene" uid="uid://c8efa1sla4ys6" path="res://meshes/blocks/curved.glb" id="1_g7xni"]
+
+[sub_resource type="Curve3D" id="Curve3D_g7xni"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Curved" unique_id=1859627078 node_paths=PackedStringArray("player_path") instance=ExtResource("1_g7xni")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(10, 0, 0)
+
+[node name="PlayerPath" type="Path3D" parent="." index="5" unique_id=1703703863]
+curve = SubResource("Curve3D_g7xni")

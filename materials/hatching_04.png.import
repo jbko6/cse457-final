@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://b6p3umw0k7kg6"
+path.etc2="res://.godot/imported/hatching_04.png-4c582c4acac037ef4fa8a3ff215cd411.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://materials/hatching_04.png"
+dest_files=["res://.godot/imported/hatching_04.png-4c582c4acac037ef4fa8a3ff215cd411.etc2.ctex"]
 
 [params]
 

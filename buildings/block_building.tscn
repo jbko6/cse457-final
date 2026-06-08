@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://u85jqj8iwb8j"]
-
-[ext_resource type="ArrayMesh" uid="uid://s5kl841c5l2f" path="res://meshes/brick_building.obj" id="1_rylur"]
-
-[node name="BlockBuilding" type="MeshInstance3D"]
-mesh = ExtResource("1_rylur")

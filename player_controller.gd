@@ -20,6 +20,9 @@ func process_mouse_input(_camera, event : InputEvent, event_position : Vector3, 
 
 func update_target_position(pos : Vector2) -> void:
 	pos_target = pos.clamp(-play_area_bounds, play_area_bounds)
+	var pos_diff = pos_target - Vector2(position.x, position.y)
+	if pos_diff.length() > speed:
+		pos_target = Vector2(position.x, position.y) + pos_diff.normalized() * 5
 
 func _physics_process(delta: float) -> void:
 	# Lerp position and rotation towards target

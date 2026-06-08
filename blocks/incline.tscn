@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c4e553tm3twad"]
+
+[ext_resource type="PackedScene" uid="uid://4u83tontquwv" path="res://meshes/blocks/incline.glb" id="1_v3pj3"]
+
+[sub_resource type="Curve3D" id="Curve3D_saayt"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 2, 0, 0, -5, 0, 0, -2, 0, 0, 0, 0, 0, 5, 1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Incline" unique_id=1361960414 node_paths=PackedStringArray("player_path") instance=ExtResource("1_v3pj3")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(10, 1, 0)
+
+[node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=1994595110]
+curve = SubResource("Curve3D_saayt")

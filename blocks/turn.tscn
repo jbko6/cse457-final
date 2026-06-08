@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bv0joj4iyha87"]
+
+[ext_resource type="PackedScene" uid="uid://cnajthfqav1ao" path="res://meshes/blocks/turn.glb" id="1_fexi5"]
+
+[sub_resource type="Curve3D" id="Curve3D_davwy"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 4, 0, 0, -5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -5),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Turn" unique_id=1276598721 node_paths=PackedStringArray("player_path") instance=ExtResource("1_fexi5")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(0, 0, -10)
+next_rotation_offset = 90.0
+
+[node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=241397202]
+curve = SubResource("Curve3D_davwy")

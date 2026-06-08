@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://rj4nfw041n4n"]
+
+[ext_resource type="PackedScene" uid="uid://c7yec34adsys8" path="res://meshes/blocks/decline.glb" id="1_y6le8"]
+
+[sub_resource type="Curve3D" id="Curve3D_vfkw8"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 2, 0, 0, -5, 0, 0, -2, 0, 0, 0, 0, 0, 5, -1.5, -2.5),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Decline" unique_id=1836677563 node_paths=PackedStringArray("player_path") instance=ExtResource("1_y6le8")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(10, -1.5, -2.5)
+
+[node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=2013043097]
+curve = SubResource("Curve3D_vfkw8")

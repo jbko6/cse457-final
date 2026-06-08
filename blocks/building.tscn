@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ohkxa6bkiqqm"]
+
+[ext_resource type="PackedScene" uid="uid://hsjf5bha3fek" path="res://meshes/blocks/building.glb" id="1_5j34s"]
+
+[sub_resource type="Curve3D" id="Curve3D_5j34s"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Building" unique_id=2030022083 node_paths=PackedStringArray("player_path") instance=ExtResource("1_5j34s")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(10, 0, 0)
+
+[node name="PlayerPath" type="Path3D" parent="." index="4" unique_id=1699585496]
+curve = SubResource("Curve3D_5j34s")
