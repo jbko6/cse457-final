@@ -14,6 +14,8 @@ var active_blocks : Array[CityBlock]
 var current_path : Path3D
 var path_distance := 0.
 var speed := 0.
+var prev_position: Vector3
+var rotation_speed_mult = 1.
 
 const BuildingLabel := "Building"
 # const ObstacleLabel := "Obstacle"
@@ -31,7 +33,7 @@ func _ready() -> void:
 	speed = starting_speed
 
 func _process(delta: float) -> void:
-	path_distance += speed * delta
+	path_distance += speed * rotation_speed_mult * delta
 	if (path_distance > current_path.curve.get_baked_length()):
 		pop_block()
 		add_block()
@@ -41,10 +43,18 @@ func _process(delta: float) -> void:
 
 	var path_transform := current_path.curve.sample_baked_with_rotation(path_distance).rotated(Vector3.UP, 	top_block.rotation.y) 
 
+	prev_position = Global.player.global_position
+	var block_prev_position = top_block.global_position
 	top_block.position = path_transform.origin.rotated(Vector3.UP, PI) * Vector3(1, -1, 1) * city_block_size
-	perspective_reference.rotation = path_transform.basis.get_euler()
-
-	speed += speed_increase_rate * delta
+	
+	if perspective_reference.rotation != path_transform.basis.get_euler():
+		perspective_reference.rotation = path_transform.basis.get_euler()
+		var scale_velocity = (Global.player.global_position - prev_position - (top_block.global_position - block_prev_position)).length()/ (Global.player.calc_velocity.z*delta)
+		rotation_speed_mult /= -1*scale_velocity
+		rotation_speed_mult = clampf(rotation_speed_mult,0,2)
+	else:
+		rotation_speed_mult = 1
+	speed = -1.0/city_block_size*Global.player.calc_velocity.z
 
 func add_block() -> CityBlock:
 	var new_block : CityBlock = city_blocks.pick_random().instantiate()
