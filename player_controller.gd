@@ -25,6 +25,9 @@ func update_target_position(pos : Vector2) -> void:
 	var max_height = position.y + speed
 	var ceiling_bounds = Vector2(play_area_bounds.x, min(play_area_bounds.y,max_height))
 	pos_target = pos.clamp(-play_area_bounds, ceiling_bounds)
+	var pos_diff = pos_target - Vector2(position.x, position.y)
+	if pos_diff.length() > speed:
+		pos_target = Vector2(position.x, position.y) + pos_diff.normalized() * 5
 
 func _physics_process(delta: float) -> void:
 	# Lerp position and rotation towards target

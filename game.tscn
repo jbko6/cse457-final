@@ -61,6 +61,7 @@ play_area_bounds = Vector2(20, 20)
 
 [node name="PlayerCollider" type="CollisionShape3D" parent="PlayerParent/Player" unique_id=134013806]
 shape = SubResource("BoxShape3D_3dxoh")
+disabled = true
 
 [node name="CameraTarget" type="Node3D" parent="PlayerParent/Player" unique_id=937384856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.5)
