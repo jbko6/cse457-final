@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ur4i1bvy6swu"
+path.s3tc="res://.godot/imported/dither_02.png-fd1fdb530e4d06a8986509ea34e8a13b.s3tc.ctex"
 path.etc2="res://.godot/imported/dither_02.png-fd1fdb530e4d06a8986509ea34e8a13b.etc2.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/dither_02.png"
-dest_files=["res://.godot/imported/dither_02.png-fd1fdb530e4d06a8986509ea34e8a13b.etc2.ctex"]
+dest_files=["res://.godot/imported/dither_02.png-fd1fdb530e4d06a8986509ea34e8a13b.s3tc.ctex", "res://.godot/imported/dither_02.png-fd1fdb530e4d06a8986509ea34e8a13b.etc2.ctex"]
 
 [params]
 

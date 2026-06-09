@@ -38,7 +38,7 @@ func _physics_process(delta: float) -> void:
 	#var collision = move_and_collide(delta*Vector3(calc_velocity.x, calc_velocity.y - drop, calc_velocity.z),true)
 	#if collision:
 		#print(collision.get_normal())
-	speed = max(1,speed - delta*gravity * calc_velocity.y - drag_constant * speed)
+	speed = max(1,speed - delta*gravity * calc_velocity.y - (drag_constant * speed) * delta)
 	rotation = lerp(
 		rotation,
 		transform.looking_at(Vector3(pos_target.x, pos_target.y, -5)).basis.get_euler(),

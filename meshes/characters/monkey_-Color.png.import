@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u5h0x0q4yu03"
+path.s3tc="res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.s3tc.ctex"
 path.etc2="res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.etc2.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/characters/monkey_-Color.png"
-dest_files=["res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.etc2.ctex"]
+dest_files=["res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.s3tc.ctex", "res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.etc2.ctex"]
 
 [params]
 

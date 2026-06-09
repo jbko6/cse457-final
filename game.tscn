@@ -34,6 +34,8 @@ reflected_light_source = 2
 tonemap_mode = 1
 ssao_enabled = true
 ssil_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.005
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3dxoh"]
 
@@ -55,7 +57,7 @@ environment = SubResource("Environment_abiha")
 [node name="Player" type="CharacterBody3D" parent="PlayerParent" unique_id=364912276 node_paths=PackedStringArray("raycast_area")]
 motion_mode = 1
 script = ExtResource("1_ccuye")
-speed = 5.0
+drag_constant = 0.01
 raycast_area = NodePath("../RaycastArea")
 play_area_bounds = Vector2(20, 20)
 
@@ -70,8 +72,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.5)
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="RaycastArea" type="Area3D" parent="PlayerParent" unique_id=1292492802]
-collision_layer = 2
+collision_layer = 32768
 collision_mask = 0
+collision_priority = 10.0
 monitorable = false
 
 [node name="RaycastCollider" type="CollisionShape3D" parent="PlayerParent/RaycastArea" unique_id=1579893843]
