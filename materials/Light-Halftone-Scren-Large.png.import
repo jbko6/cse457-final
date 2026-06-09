@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcpbpo3yt6m4c"
-path.etc2="res://.godot/imported/Light-Halftone-Scren-Large.png-ef43798cc9e5572925be06d7dbe0abfc.etc2.ctex"
+path.s3tc="res://.godot/imported/Light-Halftone-Scren-Large.png-ef43798cc9e5572925be06d7dbe0abfc.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/Light-Halftone-Scren-Large.png"
-dest_files=["res://.godot/imported/Light-Halftone-Scren-Large.png-ef43798cc9e5572925be06d7dbe0abfc.etc2.ctex"]
+dest_files=["res://.godot/imported/Light-Halftone-Scren-Large.png-ef43798cc9e5572925be06d7dbe0abfc.s3tc.ctex"]
 
 [params]
 

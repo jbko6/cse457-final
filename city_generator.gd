@@ -33,7 +33,8 @@ func _ready() -> void:
 	speed = starting_speed
 
 func _process(delta: float) -> void:
-	path_distance += speed * rotation_speed_mult * delta
+	if Global.player.alive:
+		path_distance += speed * rotation_speed_mult * delta
 	if (path_distance > current_path.curve.get_baked_length()):
 		pop_block()
 		add_block()

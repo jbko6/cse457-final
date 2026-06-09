@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xfahmxbgvrna"
-path.etc2="res://.godot/imported/Dirty Metal Glass Window Door 1.png-19e74ed2bc714f1529ab318c5bb4b3c8.etc2.ctex"
+path.s3tc="res://.godot/imported/Dirty Metal Glass Window Door 1.png-19e74ed2bc714f1529ab318c5bb4b3c8.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/textures/Dirty Metal Glass Window Door 1.png"
-dest_files=["res://.godot/imported/Dirty Metal Glass Window Door 1.png-19e74ed2bc714f1529ab318c5bb4b3c8.etc2.ctex"]
+dest_files=["res://.godot/imported/Dirty Metal Glass Window Door 1.png-19e74ed2bc714f1529ab318c5bb4b3c8.s3tc.ctex"]
 
 [params]
 

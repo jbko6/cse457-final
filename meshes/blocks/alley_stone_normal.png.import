@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjj31lc0vd4kx"
-path.etc2="res://.godot/imported/alley_stone_normal.png-f4349bca98af8762d3bbf040f8d693e2.etc2.ctex"
+path.s3tc="res://.godot/imported/alley_stone_normal.png-f4349bca98af8762d3bbf040f8d693e2.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/alley_stone_normal.png"
-dest_files=["res://.godot/imported/alley_stone_normal.png-f4349bca98af8762d3bbf040f8d693e2.etc2.ctex"]
+dest_files=["res://.godot/imported/alley_stone_normal.png-f4349bca98af8762d3bbf040f8d693e2.s3tc.ctex"]
 
 [params]
 

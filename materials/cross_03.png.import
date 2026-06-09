@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cskol7r2w67bj"
-path.etc2="res://.godot/imported/cross_03.png-45796363ec7a9dcb62caddbbc05c89dd.etc2.ctex"
+path.s3tc="res://.godot/imported/cross_03.png-45796363ec7a9dcb62caddbbc05c89dd.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/cross_03.png"
-dest_files=["res://.godot/imported/cross_03.png-45796363ec7a9dcb62caddbbc05c89dd.etc2.ctex"]
+dest_files=["res://.godot/imported/cross_03.png-45796363ec7a9dcb62caddbbc05c89dd.s3tc.ctex"]
 
 [params]
 
