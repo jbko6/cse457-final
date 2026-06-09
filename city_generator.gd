@@ -5,7 +5,7 @@ class_name CityGenerator
 @export var city_blocks : Array[PackedScene] 
 @export var buildings : Array[PackedScene]
 @export var building_materials : Array[Material]
-# @export var obstacles : Array[PackedScene]
+@export var obstacles : Array[PackedScene]
 @export var starting_speed := 1.
 @export var speed_increase_rate := 0.2
 @export var perspective_reference : Node3D

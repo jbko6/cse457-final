@@ -7,6 +7,7 @@
 [ext_resource type="Shader" uid="uid://c1j5e7x1kqyca" path="res://sky.gdshader" id="4_rou8h"]
 [ext_resource type="Script" uid="uid://b2a043g1op6ux" path="res://camera_follow.gd" id="5_66ayd"]
 [ext_resource type="PackedScene" uid="uid://daoh2rehmopr8" path="res://blocks/alley.tscn" id="6_mfdv2"]
+[ext_resource type="PackedScene" uid="uid://rnjrm80uce7s" path="res://cat.tscn" id="8_j5wjh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6k52l"]
 shader = ExtResource("4_rou8h")
@@ -29,6 +30,9 @@ tonemap_mode = 1
 ssao_enabled = true
 ssil_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_j5wjh"]
+size = Vector3(0.8, 1.5, 0.3)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_3dxoh"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6t2lo"]
@@ -49,8 +53,9 @@ environment = SubResource("Environment_abiha")
 [node name="DeadPlayer" type="RigidBody3D" parent="PlayerParent" unique_id=893159959]
 visible = false
 
-[node name="PlayerCollider" type="CollisionShape3D" parent="PlayerParent/DeadPlayer" unique_id=2026001342]
-shape = SubResource("BoxShape3D_3dxoh")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerParent/DeadPlayer" unique_id=777883663]
+transform = Transform3D(1, 0, 0, 0, 0.018063115, 0.99983686, 0, -0.99983686, 0.018063115, 0, 0.099825636, 0.07093163)
+shape = SubResource("BoxShape3D_j5wjh")
 disabled = true
 
 [node name="PlayerMesh2" parent="PlayerParent/DeadPlayer" unique_id=822372617 instance=ExtResource("3_6pecl")]
@@ -87,17 +92,19 @@ monitorable = false
 [node name="RaycastCollider" type="CollisionShape3D" parent="PlayerParent/RaycastArea" unique_id=1579893843]
 shape = SubResource("WorldBoundaryShape3D_6t2lo")
 
-[node name="Camera" type="Camera3D" parent="PlayerParent" unique_id=874881417 node_paths=PackedStringArray("target")]
+[node name="Camera" type="Camera3D" parent="PlayerParent" unique_id=874881417 node_paths=PackedStringArray("target", "dead_target")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.80825e-07, 0, 5.5)
 top_level = true
 script = ExtResource("5_66ayd")
 target = NodePath("../Player/CameraTarget")
+dead_target = NodePath("../DeadPlayer")
 
 [node name="Background" type="Node3D" parent="." unique_id=1525518237 node_paths=PackedStringArray("perspective_reference")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 script = ExtResource("3_yqj5t")
 city_block_size = 5
 city_blocks = Array[PackedScene]([ExtResource("6_mfdv2")])
+obstacles = Array[PackedScene]([ExtResource("8_j5wjh")])
 starting_speed = 2.5
 speed_increase_rate = 0.0
 perspective_reference = NodePath("../PlayerParent")
