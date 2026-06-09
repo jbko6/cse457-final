@@ -57,6 +57,8 @@ func _physics_process(delta: float) -> void:
 			dead_player.apply_torque_impulse(velocity)
 			dead_player.visible = true
 			dead_player.get_child(0).disabled = false
+			var tween = create_tween()
+			tween.tween_property(wind, "volume_db", -80.0, 0.5)
 			await get_tree().create_timer(5.0).timeout
 			get_tree().reload_current_scene()
 		else:
