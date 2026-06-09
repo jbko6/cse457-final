@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqkcf1yqsdhqp"
-path.etc2="res://.godot/imported/Rugged Wall Tile.png-a90a70e967b62e49a5b25cb53af73171.etc2.ctex"
+path.s3tc="res://.godot/imported/Rugged Wall Tile.png-a90a70e967b62e49a5b25cb53af73171.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/textures/Rugged Wall Tile.png"
-dest_files=["res://.godot/imported/Rugged Wall Tile.png-a90a70e967b62e49a5b25cb53af73171.etc2.ctex"]
+dest_files=["res://.godot/imported/Rugged Wall Tile.png-a90a70e967b62e49a5b25cb53af73171.s3tc.ctex"]
 
 [params]
 

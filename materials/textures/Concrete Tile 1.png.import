@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl5pv1r3mup0j"
-path.etc2="res://.godot/imported/Concrete Tile 1.png-6e2080b6e19787940b2851d1bfe7c80b.etc2.ctex"
+path.s3tc="res://.godot/imported/Concrete Tile 1.png-6e2080b6e19787940b2851d1bfe7c80b.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/textures/Concrete Tile 1.png"
-dest_files=["res://.godot/imported/Concrete Tile 1.png-6e2080b6e19787940b2851d1bfe7c80b.etc2.ctex"]
+dest_files=["res://.godot/imported/Concrete Tile 1.png-6e2080b6e19787940b2851d1bfe7c80b.s3tc.ctex"]
 
 [params]
 

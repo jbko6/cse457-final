@@ -34,5 +34,4 @@ enabled=PackedStringArray("res://addons/game/plugin.cfg")
 
 [physics]
 
-3d/default_gravity=0.0
 3d/default_gravity_vector=Vector3(0, 0, 0)

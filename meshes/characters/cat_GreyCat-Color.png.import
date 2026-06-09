@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnnx67opfpong"
-path.etc2="res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.etc2.ctex"
+path.s3tc="res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://meshes/characters/cat_GreyCat-Color.png"
-dest_files=["res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.etc2.ctex"]
+dest_files=["res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.s3tc.ctex"]
 
 [params]
 

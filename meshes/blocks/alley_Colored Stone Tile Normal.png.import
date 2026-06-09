@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ne0qrn7b6wkv"
-path.etc2="res://.godot/imported/alley_Colored Stone Tile Normal.png-78461b1f9bea1eb7d81061d9db2d4cd8.etc2.ctex"
+path.s3tc="res://.godot/imported/alley_Colored Stone Tile Normal.png-78461b1f9bea1eb7d81061d9db2d4cd8.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/alley_Colored Stone Tile Normal.png"
-dest_files=["res://.godot/imported/alley_Colored Stone Tile Normal.png-78461b1f9bea1eb7d81061d9db2d4cd8.etc2.ctex"]
+dest_files=["res://.godot/imported/alley_Colored Stone Tile Normal.png-78461b1f9bea1eb7d81061d9db2d4cd8.s3tc.ctex"]
 
 [params]
 

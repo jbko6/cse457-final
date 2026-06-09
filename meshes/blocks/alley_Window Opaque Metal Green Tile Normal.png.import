@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu7bq3em4hf5u"
-path.etc2="res://.godot/imported/alley_Window Opaque Metal Green Tile Normal.png-c58d169476f582d12061d68aa4293204.etc2.ctex"
+path.s3tc="res://.godot/imported/alley_Window Opaque Metal Green Tile Normal.png-c58d169476f582d12061d68aa4293204.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/alley_Window Opaque Metal Green Tile Normal.png"
-dest_files=["res://.godot/imported/alley_Window Opaque Metal Green Tile Normal.png-c58d169476f582d12061d68aa4293204.etc2.ctex"]
+dest_files=["res://.godot/imported/alley_Window Opaque Metal Green Tile Normal.png-c58d169476f582d12061d68aa4293204.s3tc.ctex"]
 
 [params]
 

@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boi5i67i5db3q"
-path.etc2="res://.godot/imported/Dark-Halftone-Screen-Large.png-4db2494932a4353f1c33da837bda0901.etc2.ctex"
+path.s3tc="res://.godot/imported/Dark-Halftone-Screen-Large.png-4db2494932a4353f1c33da837bda0901.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/Dark-Halftone-Screen-Large.png"
-dest_files=["res://.godot/imported/Dark-Halftone-Screen-Large.png-4db2494932a4353f1c33da837bda0901.etc2.ctex"]
+dest_files=["res://.godot/imported/Dark-Halftone-Screen-Large.png-4db2494932a4353f1c33da837bda0901.s3tc.ctex"]
 
 [params]
 

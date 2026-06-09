@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfx63lxi1yq32"
-path.etc2="res://.godot/imported/Stone Tile 1.png-a21d3dc5813f7971d8c27f43a4337f5f.etc2.ctex"
+path.s3tc="res://.godot/imported/Stone Tile 1.png-a21d3dc5813f7971d8c27f43a4337f5f.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/textures/Stone Tile 1.png"
-dest_files=["res://.godot/imported/Stone Tile 1.png-a21d3dc5813f7971d8c27f43a4337f5f.etc2.ctex"]
+dest_files=["res://.godot/imported/Stone Tile 1.png-a21d3dc5813f7971d8c27f43a4337f5f.s3tc.ctex"]
 
 [params]
 

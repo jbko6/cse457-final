@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btlvw0rb1m2rx"
-path.etc2="res://.godot/imported/alley_Brick Tile 1 Normal.png-8f8bc2609e40b5fa6af915ce8ce1b8c7.etc2.ctex"
+path.s3tc="res://.godot/imported/alley_Brick Tile 1 Normal.png-8f8bc2609e40b5fa6af915ce8ce1b8c7.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/alley_Brick Tile 1 Normal.png"
-dest_files=["res://.godot/imported/alley_Brick Tile 1 Normal.png-8f8bc2609e40b5fa6af915ce8ce1b8c7.etc2.ctex"]
+dest_files=["res://.godot/imported/alley_Brick Tile 1 Normal.png-8f8bc2609e40b5fa6af915ce8ce1b8c7.s3tc.ctex"]
 
 [params]
 

@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4k7ycijoodi8"
-path.etc2="res://.godot/imported/hatching_03.png-f8387cfc730d2fcb2709536d32a79e57.etc2.ctex"
+path.s3tc="res://.godot/imported/hatching_03.png-f8387cfc730d2fcb2709536d32a79e57.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/hatching_03.png"
-dest_files=["res://.godot/imported/hatching_03.png-f8387cfc730d2fcb2709536d32a79e57.etc2.ctex"]
+dest_files=["res://.godot/imported/hatching_03.png-f8387cfc730d2fcb2709536d32a79e57.s3tc.ctex"]
 
 [params]
 

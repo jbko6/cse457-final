@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cibgs5u12j46o"
-path.etc2="res://.godot/imported/sewer_door.png-55d74068241bc3467ab4f37d5bb5dc4d.etc2.ctex"
+path.s3tc="res://.godot/imported/sewer_door.png-55d74068241bc3467ab4f37d5bb5dc4d.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/sewer_door.png"
-dest_files=["res://.godot/imported/sewer_door.png-55d74068241bc3467ab4f37d5bb5dc4d.etc2.ctex"]
+dest_files=["res://.godot/imported/sewer_door.png-55d74068241bc3467ab4f37d5bb5dc4d.s3tc.ctex"]
 
 [params]
 

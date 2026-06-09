@@ -3,16 +3,11 @@
 [ext_resource type="Script" uid="uid://d07o6ma6flob8" path="res://player_controller.gd" id="1_ccuye"]
 [ext_resource type="PackedScene" uid="uid://bpx7463adibj4" path="res://meshes/paper_airplane.glb" id="3_6pecl"]
 [ext_resource type="Script" uid="uid://c7wqmk0cxyknv" path="res://city_generator.gd" id="3_yqj5t"]
+[ext_resource type="AudioStream" uid="uid://oblxy8oskxga" path="res://wind_blowing.mp3" id="4_215e1"]
 [ext_resource type="Shader" uid="uid://c1j5e7x1kqyca" path="res://sky.gdshader" id="4_rou8h"]
 [ext_resource type="Script" uid="uid://b2a043g1op6ux" path="res://camera_follow.gd" id="5_66ayd"]
 [ext_resource type="PackedScene" uid="uid://daoh2rehmopr8" path="res://blocks/alley.tscn" id="6_mfdv2"]
-[ext_resource type="PackedScene" uid="uid://dqi13cp7ycv4i" path="res://blocks/Curved.tscn" id="7_215e1"]
-[ext_resource type="PackedScene" uid="uid://ch4uo2sn16kfx" path="res://blocks/narrow.tscn" id="8_7sc4i"]
-[ext_resource type="PackedScene" uid="uid://ohkxa6bkiqqm" path="res://blocks/building.tscn" id="9_e8heu"]
-[ext_resource type="PackedScene" uid="uid://rj4nfw041n4n" path="res://blocks/decline.tscn" id="10_rvswv"]
-[ext_resource type="PackedScene" uid="uid://c4e553tm3twad" path="res://blocks/incline.tscn" id="11_boyg6"]
-[ext_resource type="PackedScene" uid="uid://bv0joj4iyha87" path="res://blocks/turn.tscn" id="12_e36ub"]
-[ext_resource type="PackedScene" uid="uid://o5v4fib25nbh" path="res://blocks/sewer.tscn" id="13_rvswv"]
+[ext_resource type="PackedScene" uid="uid://rnjrm80uce7s" path="res://cat.tscn" id="8_j5wjh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6k52l"]
 shader = ExtResource("4_rou8h")
@@ -35,6 +30,9 @@ tonemap_mode = 1
 ssao_enabled = true
 ssil_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_j5wjh"]
+size = Vector3(0.8, 1.5, 0.3)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_3dxoh"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6t2lo"]
@@ -52,16 +50,28 @@ environment = SubResource("Environment_abiha")
 
 [node name="PlayerParent" type="Node3D" parent="." unique_id=1747088249]
 
-[node name="Player" type="CharacterBody3D" parent="PlayerParent" unique_id=364912276 node_paths=PackedStringArray("raycast_area")]
+[node name="DeadPlayer" type="RigidBody3D" parent="PlayerParent" unique_id=893159959]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerParent/DeadPlayer" unique_id=777883663]
+transform = Transform3D(1, 0, 0, 0, 0.018063115, 0.99983686, 0, -0.99983686, 0.018063115, 0, 0.099825636, 0.07093163)
+shape = SubResource("BoxShape3D_j5wjh")
+disabled = true
+
+[node name="PlayerMesh2" parent="PlayerParent/DeadPlayer" unique_id=822372617 instance=ExtResource("3_6pecl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Player" type="CharacterBody3D" parent="PlayerParent" unique_id=364912276 node_paths=PackedStringArray("raycast_area", "wind", "dead_player")]
 motion_mode = 1
 script = ExtResource("1_ccuye")
 speed = 5.0
 raycast_area = NodePath("../RaycastArea")
 play_area_bounds = Vector2(20, 20)
+wind = NodePath("Wind")
+dead_player = NodePath("../DeadPlayer")
 
 [node name="PlayerCollider" type="CollisionShape3D" parent="PlayerParent/Player" unique_id=134013806]
 shape = SubResource("BoxShape3D_3dxoh")
-disabled = true
 
 [node name="CameraTarget" type="Node3D" parent="PlayerParent/Player" unique_id=937384856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.5)
@@ -69,25 +79,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.5)
 [node name="PlayerMesh2" parent="PlayerParent/Player" unique_id=1286753042 instance=ExtResource("3_6pecl")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
+[node name="Wind" type="AudioStreamPlayer" parent="PlayerParent/Player" unique_id=276998690]
+stream = ExtResource("4_215e1")
+pitch_scale = 0.01
+parameters/looping = true
+
 [node name="RaycastArea" type="Area3D" parent="PlayerParent" unique_id=1292492802]
-collision_layer = 2
+collision_layer = 4
 collision_mask = 0
 monitorable = false
 
 [node name="RaycastCollider" type="CollisionShape3D" parent="PlayerParent/RaycastArea" unique_id=1579893843]
 shape = SubResource("WorldBoundaryShape3D_6t2lo")
 
-[node name="Camera" type="Camera3D" parent="PlayerParent" unique_id=874881417 node_paths=PackedStringArray("target")]
+[node name="Camera" type="Camera3D" parent="PlayerParent" unique_id=874881417 node_paths=PackedStringArray("target", "dead_target")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.80825e-07, 0, 5.5)
 top_level = true
 script = ExtResource("5_66ayd")
 target = NodePath("../Player/CameraTarget")
+dead_target = NodePath("../DeadPlayer")
 
 [node name="Background" type="Node3D" parent="." unique_id=1525518237 node_paths=PackedStringArray("perspective_reference")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 script = ExtResource("3_yqj5t")
 city_block_size = 5
-city_blocks = Array[PackedScene]([ExtResource("6_mfdv2"), ExtResource("7_215e1"), ExtResource("8_7sc4i"), ExtResource("9_e8heu"), ExtResource("10_rvswv"), ExtResource("11_boyg6"), ExtResource("12_e36ub"), ExtResource("13_rvswv")])
+city_blocks = Array[PackedScene]([ExtResource("6_mfdv2")])
+obstacles = Array[PackedScene]([ExtResource("8_j5wjh")])
 starting_speed = 2.5
 speed_increase_rate = 0.0
 perspective_reference = NodePath("../PlayerParent")
