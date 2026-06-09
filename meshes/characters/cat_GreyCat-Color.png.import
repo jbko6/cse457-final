@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://cnnx67opfpong"
+path.etc2="res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://meshes/characters/cat_GreyCat-Color.png"
+dest_files=["res://.godot/imported/cat_GreyCat-Color.png-8c756c894846a8d2b97405555218256a.etc2.ctex"]
 
 [params]
 

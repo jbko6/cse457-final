@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://o5v4fib25nbh"]
+
+[ext_resource type="PackedScene" uid="uid://cjwv7dgbkm6bl" path="res://meshes/blocks/sewer.glb" id="1_55yhn"]
+
+[sub_resource type="Curve3D" id="Curve3D_2p5dc"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 1, 0, 0, -1.225, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -1.909, 0, 0, 0, 0, 0, 0, 1.215, 0, -3.5, 0, 0, 0, 0, 0, 0, 5, 0, -3.5),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Sewer" unique_id=1039804701 node_paths=PackedStringArray("player_path") instance=ExtResource("1_55yhn")]
+player_path = NodePath("Path3D")
+next_block_offset = Vector3(10, 0, -3.5)
+
+[node name="Path3D" type="Path3D" parent="." index="10" unique_id=1394806246]
+curve = SubResource("Curve3D_2p5dc")

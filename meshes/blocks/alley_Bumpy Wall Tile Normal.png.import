@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://do2brylfni1l1"
+path.etc2="res://.godot/imported/alley_Bumpy Wall Tile Normal.png-6cea9b7b5b736e82f7d369e28f519a61.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "80d2a52d9335322379132b09a7e6bcf5"
+}
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://meshes/blocks/alley_Bumpy Wall Tile Normal.png"
+dest_files=["res://.godot/imported/alley_Bumpy Wall Tile Normal.png-6cea9b7b5b736e82f7d369e28f519a61.etc2.ctex"]
 
 [params]
 
@@ -22,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://meshes/alley_Bumpy Wall Tile Normal.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

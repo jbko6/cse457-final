@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ch4uo2sn16kfx"]
+
+[ext_resource type="PackedScene" uid="uid://coomdlecv0ngo" path="res://meshes/blocks/narrow.glb" id="1_cpa1x"]
+
+[sub_resource type="Curve3D" id="Curve3D_eqoaj"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Narrow" unique_id=140655153 node_paths=PackedStringArray("player_path") instance=ExtResource("1_cpa1x")]
+player_path = NodePath("PlayerPath")
+next_block_offset = Vector3(10, 0, 0)
+
+[node name="PlayerPath" type="Path3D" parent="." index="8" unique_id=794555511]
+curve = SubResource("Curve3D_eqoaj")

@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ch0od6irh5vo4"]
+
+[ext_resource type="Shader" uid="uid://bqyudcsy7o8se" path="res://shaders/stylized.gdshader" id="1_roy61"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hbd05"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_roy61")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_affect = 0.0
+shader_parameter/use_stepped = true
+shader_parameter/steps = 3.0
+shader_parameter/step_smoothness = 0.3
+shader_parameter/shadow_tint = Color(0, 0, 0, 1)
+shader_parameter/shadow_tint_amount = 0.4
+shader_parameter/specular = 1.0
+shader_parameter/normal_strength = 0.0
+shader_parameter/use_rim = true
+shader_parameter/rim_color = Color(1, 1, 1, 1)
+shader_parameter/rim_amount = 2.0
+shader_parameter/rim_smoothness = 0.2
+shader_parameter/rim_mask_shadow = 1.0
+shader_parameter/rim_blend = 1.0
+shader_parameter/use_pattern = true
+shader_parameter/pattern_texture = SubResource("NoiseTexture2D_hbd05")
+shader_parameter/pattern_uv_mode = 2
+shader_parameter/pattern_tiling = 48.0
+shader_parameter/pattern_amount = 0.0
+shader_parameter/pattern_smoothness = 0.0
+shader_parameter/pattern_blend = 0.2
+shader_parameter/emissive_color = Color(1, 1, 1, 1)
+shader_parameter/emissive_strength = 0.0

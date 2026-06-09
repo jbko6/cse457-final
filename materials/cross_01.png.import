@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://xbpxvvlqudgb"
+path.etc2="res://.godot/imported/cross_01.png-1456fb7c31d6722a48c27975e5a7e2ac.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://materials/cross_01.png"
+dest_files=["res://.godot/imported/cross_01.png-1456fb7c31d6722a48c27975e5a7e2ac.etc2.ctex"]
 
 [params]
 

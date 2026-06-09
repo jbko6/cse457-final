@@ -1,8 +1,0 @@
-[gd_resource type="ShaderMaterial" format=3 uid="uid://b6kl3vndggm5g"]
-
-[ext_resource type="Shader" uid="uid://dpv5i6ubty6si" path="res://shaders/toon.gdshader" id="1_ihgwa"]
-
-[resource]
-render_priority = 0
-shader = ExtResource("1_ihgwa")
-shader_parameter/albedo_color = Color(1, 1, 1, 1)

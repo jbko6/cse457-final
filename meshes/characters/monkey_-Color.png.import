@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://u5h0x0q4yu03"
+path.etc2="res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "85b7ea419d68e0c0cc076b150d46aef0"
+}
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://meshes/characters/monkey_-Color.png"
+dest_files=["res://.godot/imported/monkey_-Color.png-096df15bc9b341d9def5cb05b8d4c832.etc2.ctex"]
 
 [params]
 

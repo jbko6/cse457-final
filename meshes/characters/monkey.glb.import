@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bpx7463adibj4"
-path="res://.godot/imported/paper_airplane.glb-d737eb3ed70d046606d7159dd83d8874.scn"
+uid="uid://d3ordncnty477"
+path="res://.godot/imported/monkey.glb-219e4cedd3e44eb99c49f653cca306d7.scn"
 
 [deps]
 
-source_file="res://meshes/paper_airplane.glb"
-dest_files=["res://.godot/imported/paper_airplane.glb-d737eb3ed70d046606d7159dd83d8874.scn"]
+source_file="res://meshes/characters/monkey.glb"
+dest_files=["res://.godot/imported/monkey.glb-219e4cedd3e44eb99c49f653cca306d7.scn"]
 
 [params]
 
@@ -38,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=2
 gltf/embedded_image_handling=1

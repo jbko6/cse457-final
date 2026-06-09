@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0oxumqbhpo8q"
-path.etc2="res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"
+uid="uid://18ygdjdw3v45"
+path.etc2="res://.godot/imported/sewer_Untitled_Artwork 1.png-0e9e0781270cdab03bca869b8158ef09.etc2.ctex"
 metadata={
 "imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "a77bb3ef3551462a872e1bd50119d63f"
+}
 
 [deps]
 
-source_file="res://materials/textures/Metal Bar Wall 1.png"
-dest_files=["res://.godot/imported/Metal Bar Wall 1.png-0cbccc721ebf0417f4ae7dc4a5aeb13e.etc2.ctex"]
+source_file="res://meshes/blocks/sewer_Untitled_Artwork 1.png"
+dest_files=["res://.godot/imported/sewer_Untitled_Artwork 1.png-0e9e0781270cdab03bca869b8158ef09.etc2.ctex"]
 
 [params]
 

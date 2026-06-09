@@ -3,17 +3,16 @@
 [ext_resource type="Script" uid="uid://d07o6ma6flob8" path="res://player_controller.gd" id="1_ccuye"]
 [ext_resource type="PackedScene" uid="uid://bpx7463adibj4" path="res://meshes/paper_airplane.glb" id="3_6pecl"]
 [ext_resource type="Script" uid="uid://c7wqmk0cxyknv" path="res://city_generator.gd" id="3_yqj5t"]
-[ext_resource type="PackedScene" uid="uid://c8irci50a7cfo" path="res://blocks/r_block.tscn" id="4_7f7j1"]
 [ext_resource type="Shader" uid="uid://c1j5e7x1kqyca" path="res://sky.gdshader" id="4_rou8h"]
 [ext_resource type="Script" uid="uid://b2a043g1op6ux" path="res://camera_follow.gd" id="5_66ayd"]
-[ext_resource type="PackedScene" uid="uid://do11suaq1no85" path="res://blocks/back_r_block.tscn" id="6_qimr7"]
-[ext_resource type="PackedScene" uid="uid://cghfl4sfvimcp" path="res://buildings/Large Building-1bt4yYKmuK.glb" id="7_j2ek3"]
-[ext_resource type="PackedScene" uid="uid://cvicrghjwp8fs" path="res://blocks/i_block.tscn" id="7_x7lpn"]
-[ext_resource type="PackedScene" uid="uid://dnfry2yuksv83" path="res://buildings/Large Building-h7Jaq7bqMq.glb" id="8_c22ph"]
-[ext_resource type="PackedScene" uid="uid://bac7o7glqr4vm" path="res://buildings/Large Building-JgGLJH2iXj.glb" id="9_gqh77"]
-[ext_resource type="PackedScene" uid="uid://bpl183pfwakd8" path="res://blocks/i_block_intersection.tscn" id="9_u85uv"]
-[ext_resource type="PackedScene" uid="uid://u85jqj8iwb8j" path="res://buildings/block_building.tscn" id="12_jnwd1"]
-[ext_resource type="PackedScene" uid="uid://cvgomkf86poxo" path="res://meshes/alley.glb" id="14_215e1"]
+[ext_resource type="PackedScene" uid="uid://daoh2rehmopr8" path="res://blocks/alley.tscn" id="6_mfdv2"]
+[ext_resource type="PackedScene" uid="uid://dqi13cp7ycv4i" path="res://blocks/Curved.tscn" id="7_215e1"]
+[ext_resource type="PackedScene" uid="uid://ch4uo2sn16kfx" path="res://blocks/narrow.tscn" id="8_7sc4i"]
+[ext_resource type="PackedScene" uid="uid://ohkxa6bkiqqm" path="res://blocks/building.tscn" id="9_e8heu"]
+[ext_resource type="PackedScene" uid="uid://rj4nfw041n4n" path="res://blocks/decline.tscn" id="10_rvswv"]
+[ext_resource type="PackedScene" uid="uid://c4e553tm3twad" path="res://blocks/incline.tscn" id="11_boyg6"]
+[ext_resource type="PackedScene" uid="uid://bv0joj4iyha87" path="res://blocks/turn.tscn" id="12_e36ub"]
+[ext_resource type="PackedScene" uid="uid://o5v4fib25nbh" path="res://blocks/sewer.tscn" id="13_rvswv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6k52l"]
 shader = ExtResource("4_rou8h")
@@ -31,7 +30,10 @@ sky_material = SubResource("ShaderMaterial_6k52l")
 background_mode = 2
 sky = SubResource("Sky_3arfg")
 ambient_light_color = Color(1, 1, 1, 1)
+reflected_light_source = 2
 tonemap_mode = 1
+ssao_enabled = true
+ssil_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3dxoh"]
 
@@ -53,16 +55,18 @@ environment = SubResource("Environment_abiha")
 [node name="Player" type="CharacterBody3D" parent="PlayerParent" unique_id=364912276 node_paths=PackedStringArray("raycast_area")]
 motion_mode = 1
 script = ExtResource("1_ccuye")
+speed = 5.0
 raycast_area = NodePath("../RaycastArea")
-play_area_bounds = Vector2(10, 13)
+play_area_bounds = Vector2(20, 20)
 
 [node name="PlayerCollider" type="CollisionShape3D" parent="PlayerParent/Player" unique_id=134013806]
 shape = SubResource("BoxShape3D_3dxoh")
+disabled = true
 
 [node name="CameraTarget" type="Node3D" parent="PlayerParent/Player" unique_id=937384856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.5)
 
-[node name="PlayerMesh2" parent="PlayerParent/Player" unique_id=1703325133 instance=ExtResource("3_6pecl")]
+[node name="PlayerMesh2" parent="PlayerParent/Player" unique_id=1286753042 instance=ExtResource("3_6pecl")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="RaycastArea" type="Area3D" parent="PlayerParent" unique_id=1292492802]
@@ -79,15 +83,18 @@ top_level = true
 script = ExtResource("5_66ayd")
 target = NodePath("../Player/CameraTarget")
 
-[node name="Alley" parent="PlayerParent" unique_id=1448803937 instance=ExtResource("14_215e1")]
-transform = Transform3D(0.002530767, 0, -0.9999968, 0, 1, 0, 0.9999968, 0, 0.002530767, 0, 0, 0)
-
 [node name="Background" type="Node3D" parent="." unique_id=1525518237 node_paths=PackedStringArray("perspective_reference")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 script = ExtResource("3_yqj5t")
 city_block_size = 5
-city_blocks = Array[PackedScene]([ExtResource("4_7f7j1"), ExtResource("6_qimr7"), ExtResource("7_x7lpn"), ExtResource("9_u85uv")])
-buildings = Array[PackedScene]([ExtResource("7_j2ek3"), ExtResource("8_c22ph"), ExtResource("9_gqh77"), ExtResource("12_jnwd1")])
+city_blocks = Array[PackedScene]([ExtResource("6_mfdv2"), ExtResource("7_215e1"), ExtResource("8_7sc4i"), ExtResource("9_e8heu"), ExtResource("10_rvswv"), ExtResource("11_boyg6"), ExtResource("12_e36ub"), ExtResource("13_rvswv")])
 starting_speed = 2.5
 speed_increase_rate = 0.0
 perspective_reference = NodePath("../PlayerParent")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1766436579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21424246, 2.1352854, -1.2878122)
+visible = false
+light_energy = 16.0
+omni_range = 125.941
+omni_attenuation = 0.515
