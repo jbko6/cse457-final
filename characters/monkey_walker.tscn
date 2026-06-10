@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cwoeimqpvq3q8"]
+
+[ext_resource type="PackedScene" uid="uid://d3ordncnty477" path="res://meshes/characters/monkey.glb" id="1_w5wgq"]
+
+[node name="monkey" unique_id=2098841757 node_paths=PackedStringArray("animation_player") instance=ExtResource("1_w5wgq")]
+transform = Transform3D(0.33, 0, 0, 0, 0.33, 0, 0, 0, 0.33, 0, 0, 0)
+use_model_front = true
+animation_player = NodePath("AnimationPlayer")
+action = "Monkey"
+
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(1426043215) index="0" unique_id=1805569353]
+bones/3/rotation = Quaternion(1.122891e-07, -5.2980322e-08, -0.7240465, 0.68975115)
+bones/4/rotation = Quaternion(-1.5313309e-07, -1.5454303e-08, 0.7071068, 0.7071068)
+bones/5/rotation = Quaternion(-2.4026255e-08, 1.7396926e-09, -0.78764004, 0.6161357)
+bones/6/rotation = Quaternion(-1.0100599e-08, 5.924115e-08, -0.09475033, 0.99550104)
+bones/7/rotation = Quaternion(-2.0531226e-08, 4.416838e-09, 0.758109, 0.65212786)
+bones/8/rotation = Quaternion(-1.5248288e-08, -3.6212974e-08, 0.11440118, 0.9934347)
+bones/12/rotation = Quaternion(0.60150105, -0.3717481, -0.60150087, -0.3717481)
+bones/13/rotation = Quaternion(-0.40602574, -9.663609e-08, -8.410347e-08, 0.9138617)
+bones/16/rotation = Quaternion(-0.3592874, 0.04729456, -0.67835224, 0.6391511)
+bones/17/rotation = Quaternion(-0.7032369, -7.519386e-08, 0.394598, 0.591397)
+bones/19/rotation = Quaternion(-0.33330098, 0.08515486, 0.20816648, 0.9156014)

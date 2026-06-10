@@ -38,6 +38,9 @@ func toonify(node: Node, base_material: ShaderMaterial, material_map: Dictionary
                         new_material.set_shader_parameter("normal_texture", existing_material.normal_texture)
                     new_material.set_shader_parameter("emissive_color", existing_material.emission if existing_material.emission_enabled else Color(0, 0, 0))
                     new_material.set_shader_parameter("emissive_strength", 1.0 if existing_material.emission_enabled else 0.0)
+                    if existing_material.emission_texture:
+                        new_material.set_shader_parameter("albedo_texture", existing_material.emission_texture)
+                        new_material.set_shader_parameter("emissive_strength", 0.0)
                     node.set_surface_override_material(i, new_material)  # ✅ fixed
                     material_map[existing_material.resource_name] = new_material
                 else:

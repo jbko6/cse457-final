@@ -23,12 +23,27 @@ const BuildingLabel := "Building"
 func _ready() -> void:
 	Global.city = self
 
-	# instantiate initial blocks
+	var b0 : CityBlock = city_blocks.pick_random().instantiate()
+	b0.scale = Vector3.ONE * city_block_size
+	add_child(b0)
+	active_blocks.append(b0)
+
+	var b1 : CityBlock = city_blocks.pick_random().instantiate()
+	b0.add_child(b1)
+	b1.position = b0.next_block_offset
+	b1.rotate_y(deg_to_rad(b0.next_rotation_offset))
+	b1.scale = Vector3.ONE
+	active_blocks.append(b1)
+
 	add_block()
-	current_path = add_block().player_path
 	add_block()
 	add_block()
+
+	# Force into the same state pop_block produces so _process works from frame 1
+	pop_block()
 	add_block()
+	current_path = active_blocks[1].player_path
+	path_distance = 0
 
 	speed = starting_speed
 
@@ -59,23 +74,12 @@ func _process(delta: float) -> void:
 
 func add_block() -> CityBlock:
 	var new_block : CityBlock = city_blocks.pick_random().instantiate()
-	if active_blocks.size() == 1:
-		var top_block := active_blocks[0]
-		add_child(new_block)
-		top_block.reparent(new_block)
-		top_block.scale = Vector3.ONE
-		new_block.scale = Vector3.ONE * city_block_size
-	elif active_blocks.size() > 0:
-		var last_block_index := active_blocks.size() - 1
-		active_blocks[last_block_index].add_child(new_block)
-		new_block.position = active_blocks[last_block_index].next_block_offset
-		new_block.rotate_y(deg_to_rad(active_blocks[last_block_index].next_rotation_offset))
-	else:
-		new_block.scale = Vector3.ONE * city_block_size
-		add_child(new_block)
+	var last = active_blocks.back()
+	last.add_child(new_block)
+	new_block.position = last.next_block_offset
+	new_block.rotate_y(deg_to_rad(last.next_rotation_offset))
+	new_block.scale = Vector3.ONE
 	active_blocks.append(new_block)
-	populate_buildings(new_block)
-	# populate_obstacles(new_block)
 	return new_block
 
 func pop_block() -> CityBlock:
@@ -100,19 +104,19 @@ func pop_block() -> CityBlock:
 		return new_head
 	return null
 
-func populate_buildings(block : CityBlock) -> CityBlock:
-	for child in block.get_children():
-		if child is Label3D:
-			if child.text == BuildingLabel:
-				var new_building : Node3D = buildings.pick_random().instantiate()
-				new_building.transform = child.transform
-				# if new_building is MeshInstance3D:
-				# 	new_building.mesh.material = building_materials.pick_random()
-				var building_name := child.name
-				child.queue_free()
-				new_building.name = building_name
-				block.add_child(new_building)
-	return block
+# func populate_buildings(block : CityBlock) -> CityBlock:
+# 	for child in block.get_children():
+# 		if child is Label3D:
+# 			if child.text == BuildingLabel:
+# 				var new_building : Node3D = buildings.pick_random().instantiate()
+# 				new_building.transform = child.transform
+# 				# if new_building is MeshInstance3D:
+# 				# 	new_building.mesh.material = building_materials.pick_random()
+# 				var building_name := child.name
+# 				child.queue_free()
+# 				new_building.name = building_name
+# 				block.add_child(new_building)
+# 	return block
 
 # func populate_obstacles(block : CityBlock) -> CityBlock:
 # 	for child in block.get_children():

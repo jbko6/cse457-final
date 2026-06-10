@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://o5v4fib25nbh"]
 
 [ext_resource type="PackedScene" uid="uid://cjwv7dgbkm6bl" path="res://meshes/blocks/sewer.glb" id="1_55yhn"]
+[ext_resource type="PackedScene" uid="uid://8eyiehu6sibm" path="res://characters/rat_walker.tscn" id="2_0abqq"]
 
 [sub_resource type="Curve3D" id="Curve3D_pctsl"]
 _data = {
@@ -8,6 +9,13 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
+
+[sub_resource type="Curve3D" id="Curve3D_cyb71"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -11.11),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
 
 [node name="Sewer" unique_id=672025495 node_paths=PackedStringArray("player_path") instance=ExtResource("1_55yhn")]
 player_path = NodePath("Path3D")
@@ -60,3 +68,10 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0
 light_energy = 20.0
 shadow_enabled = true
 spot_attenuation = 0.1
+
+[node name="Path3D2" type="Path3D" parent="." index="44" unique_id=1588796749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7326684, -1.1856313, 1.0959445)
+curve = SubResource("Curve3D_cyb71")
+
+[node name="cat" parent="Path3D2" index="0" unique_id=10098907 instance=ExtResource("2_0abqq")]
+transform = Transform3D(-0.33, 0, 0, 0, 0.33, 0, 0, 0, -0.33, 0, 0, 0)
