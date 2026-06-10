@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://8fhbr8lvjjo5"
 path.s3tc="res://.godot/imported/narrow_woodboards.png-3eb3768dafb8370226227951e4f4b565.s3tc.ctex"
-path.etc2="res://.godot/imported/narrow_woodboards.png-3eb3768dafb8370226227951e4f4b565.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/narrow_woodboards.png"
-dest_files=["res://.godot/imported/narrow_woodboards.png-3eb3768dafb8370226227951e4f4b565.s3tc.ctex", "res://.godot/imported/narrow_woodboards.png-3eb3768dafb8370226227951e4f4b565.etc2.ctex"]
+dest_files=["res://.godot/imported/narrow_woodboards.png-3eb3768dafb8370226227951e4f4b565.s3tc.ctex"]
 
 [params]
 

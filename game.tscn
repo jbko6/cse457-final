@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://bv0joj4iyha87" path="res://blocks/turn.tscn" id="12_e36ub"]
 [ext_resource type="PackedScene" uid="uid://c4e553tm3twad" path="res://blocks/incline.tscn" id="12_iotsf"]
 [ext_resource type="PackedScene" uid="uid://o5v4fib25nbh" path="res://blocks/sewer.tscn" id="13_rvswv"]
+[ext_resource type="PackedScene" uid="uid://b0n77k47wewr8" path="res://meshes/characters/cat.glb" id="14_80cx4"]
+[ext_resource type="PackedScene" uid="uid://d3ordncnty477" path="res://meshes/characters/monkey.glb" id="15_e8heu"]
+[ext_resource type="PackedScene" uid="uid://b1gppmqhmslcv" path="res://meshes/characters/rat.glb" id="16_rvswv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6k52l"]
 shader = ExtResource("4_rou8h")
@@ -112,6 +115,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15, 0)
 script = ExtResource("3_yqj5t")
 city_block_size = 5
 city_blocks = Array[PackedScene]([ExtResource("6_mfdv2"), ExtResource("7_215e1"), ExtResource("8_7sc4i"), ExtResource("10_rvswv"), ExtResource("12_e36ub"), ExtResource("13_rvswv"), ExtResource("12_iotsf")])
+obstacles = Array[PackedScene]([ExtResource("14_80cx4"), ExtResource("15_e8heu"), ExtResource("16_rvswv")])
 starting_speed = 2.5
 speed_increase_rate = 0.0
 perspective_reference = NodePath("../PlayerParent")

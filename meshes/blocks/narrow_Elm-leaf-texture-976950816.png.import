@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://y71x65alj54h"
 path.s3tc="res://.godot/imported/narrow_Elm-leaf-texture-976950816.png-8703339c6935a7eebe0802d34d888f32.s3tc.ctex"
-path.etc2="res://.godot/imported/narrow_Elm-leaf-texture-976950816.png-8703339c6935a7eebe0802d34d888f32.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/narrow_Elm-leaf-texture-976950816.png"
-dest_files=["res://.godot/imported/narrow_Elm-leaf-texture-976950816.png-8703339c6935a7eebe0802d34d888f32.s3tc.ctex", "res://.godot/imported/narrow_Elm-leaf-texture-976950816.png-8703339c6935a7eebe0802d34d888f32.etc2.ctex"]
+dest_files=["res://.godot/imported/narrow_Elm-leaf-texture-976950816.png-8703339c6935a7eebe0802d34d888f32.s3tc.ctex"]
 
 [params]
 

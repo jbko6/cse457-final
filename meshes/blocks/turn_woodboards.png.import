@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpmovbm0xan35"
 path.s3tc="res://.godot/imported/turn_woodboards.png-d13494a4e9dfff9bdbfd49097b64947e.s3tc.ctex"
-path.etc2="res://.godot/imported/turn_woodboards.png-d13494a4e9dfff9bdbfd49097b64947e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/turn_woodboards.png"
-dest_files=["res://.godot/imported/turn_woodboards.png-d13494a4e9dfff9bdbfd49097b64947e.s3tc.ctex", "res://.godot/imported/turn_woodboards.png-d13494a4e9dfff9bdbfd49097b64947e.etc2.ctex"]
+dest_files=["res://.godot/imported/turn_woodboards.png-d13494a4e9dfff9bdbfd49097b64947e.s3tc.ctex"]
 
 [params]
 

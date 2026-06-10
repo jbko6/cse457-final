@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb1ek817u6wjo"
 path.s3tc="res://.godot/imported/incline_Brick Tile 2 Normal.png-cc80951749c590bb198d70c61dc12963.s3tc.ctex"
-path.etc2="res://.godot/imported/incline_Brick Tile 2 Normal.png-cc80951749c590bb198d70c61dc12963.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/incline_Brick Tile 2 Normal.png"
-dest_files=["res://.godot/imported/incline_Brick Tile 2 Normal.png-cc80951749c590bb198d70c61dc12963.s3tc.ctex", "res://.godot/imported/incline_Brick Tile 2 Normal.png-cc80951749c590bb198d70c61dc12963.etc2.ctex"]
+dest_files=["res://.godot/imported/incline_Brick Tile 2 Normal.png-cc80951749c590bb198d70c61dc12963.s3tc.ctex"]
 
 [params]
 

@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://by7vb6jdq7j03"
 path.s3tc="res://.godot/imported/decline_Untitled_Artwork 3.png-200bd5241f3562b5987e125cbefe9580.s3tc.ctex"
-path.etc2="res://.godot/imported/decline_Untitled_Artwork 3.png-200bd5241f3562b5987e125cbefe9580.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/decline_Untitled_Artwork 3.png"
-dest_files=["res://.godot/imported/decline_Untitled_Artwork 3.png-200bd5241f3562b5987e125cbefe9580.s3tc.ctex", "res://.godot/imported/decline_Untitled_Artwork 3.png-200bd5241f3562b5987e125cbefe9580.etc2.ctex"]
+dest_files=["res://.godot/imported/decline_Untitled_Artwork 3.png-200bd5241f3562b5987e125cbefe9580.s3tc.ctex"]
 
 [params]
 

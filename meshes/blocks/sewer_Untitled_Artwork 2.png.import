@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkjoysl7f6h2k"
 path.s3tc="res://.godot/imported/sewer_Untitled_Artwork 2.png-5c8036bd4e56447982c1e3762747cdbf.s3tc.ctex"
-path.etc2="res://.godot/imported/sewer_Untitled_Artwork 2.png-5c8036bd4e56447982c1e3762747cdbf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/sewer_Untitled_Artwork 2.png"
-dest_files=["res://.godot/imported/sewer_Untitled_Artwork 2.png-5c8036bd4e56447982c1e3762747cdbf.s3tc.ctex", "res://.godot/imported/sewer_Untitled_Artwork 2.png-5c8036bd4e56447982c1e3762747cdbf.etc2.ctex"]
+dest_files=["res://.godot/imported/sewer_Untitled_Artwork 2.png-5c8036bd4e56447982c1e3762747cdbf.s3tc.ctex"]
 
 [params]
 

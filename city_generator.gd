@@ -14,11 +14,9 @@ var active_blocks : Array[CityBlock]
 var current_path : Path3D
 var path_distance := 0.
 var speed := 0.
-var prev_position: Vector3
-var rotation_speed_mult = 1.
 
 const BuildingLabel := "Building"
-# const ObstacleLabel := "Obstacle"
+const ObstacleLabel := "Obstacle"
 
 func _ready() -> void:
 	Global.city = self
@@ -33,8 +31,7 @@ func _ready() -> void:
 	speed = starting_speed
 
 func _process(delta: float) -> void:
-	if Global.player.alive:
-		path_distance += speed * rotation_speed_mult * delta
+	path_distance += speed * delta
 	if (path_distance > current_path.curve.get_baked_length()):
 		pop_block()
 		add_block()
@@ -44,18 +41,10 @@ func _process(delta: float) -> void:
 
 	var path_transform := current_path.curve.sample_baked_with_rotation(path_distance).rotated(Vector3.UP, 	top_block.rotation.y) 
 
-	prev_position = Global.player.global_position
-	var block_prev_position = top_block.global_position
 	top_block.position = path_transform.origin.rotated(Vector3.UP, PI) * Vector3(1, -1, 1) * city_block_size
-	
-	if perspective_reference.rotation != path_transform.basis.get_euler():
-		perspective_reference.rotation = path_transform.basis.get_euler()
-		var scale_velocity = (Global.player.global_position - prev_position - (top_block.global_position - block_prev_position)).length()/ (Global.player.calc_velocity.z*delta)
-		rotation_speed_mult /= -1*scale_velocity
-		rotation_speed_mult = clampf(rotation_speed_mult,0,2)
-	else:
-		rotation_speed_mult = 1
-	speed = -1.0/city_block_size*Global.player.calc_velocity.z
+	perspective_reference.rotation = path_transform.basis.get_euler()
+
+	speed += speed_increase_rate * delta
 
 func add_block() -> CityBlock:
 	var new_block : CityBlock = city_blocks.pick_random().instantiate()
@@ -75,7 +64,8 @@ func add_block() -> CityBlock:
 		add_child(new_block)
 	active_blocks.append(new_block)
 	populate_buildings(new_block)
-	# populate_obstacles(new_block)
+	populate_obstacles(new_block)
+	ready_obstacles(new_block) 
 	return new_block
 
 func pop_block() -> CityBlock:
@@ -114,17 +104,26 @@ func populate_buildings(block : CityBlock) -> CityBlock:
 				block.add_child(new_building)
 	return block
 
-# func populate_obstacles(block : CityBlock) -> CityBlock:
-# 	for child in block.get_children():
-# 		if child is Label3D:
-# 			if child.text == ObstacleLabel:
-# 				var new_obstacle : Obstacle = obstacles.pick_random().instantiate()
-# 				new_obstacle.transform = child.transform
-# 				var obstacle_name := child.name
-# 				child.queue_free()
-# 				new_obstacle.name = obstacle_name
-# 				block.add_child(new_obstacle)
-# 	return block
+func populate_obstacles(block : CityBlock) -> CityBlock:
+	for child in block.get_children():
+		if child is Label3D and child.text == ObstacleLabel:
+			if obstacles.is_empty():
+				print("WARNING: No obstacle scenes in CityGenerator array!")
+				child.queue_free()
+				continue
+				
+			var new_obstacle = obstacles.pick_random().instantiate()
+			if not new_obstacle:
+				child.queue_free()
+				continue
+				
+			# Copy transform properly
+			new_obstacle.transform = child.transform
+			var obstacle_name := child.name
+			child.queue_free()
+			new_obstacle.name = obstacle_name
+			block.add_child(new_obstacle)
+	return block
 
 func ready_obstacles(block : CityBlock) -> void:
 	for child in block.get_children():

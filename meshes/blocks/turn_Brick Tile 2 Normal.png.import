@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cse5xwqbtefyy"
 path.s3tc="res://.godot/imported/turn_Brick Tile 2 Normal.png-dc226b57dd9766ba331cda2da9a824b2.s3tc.ctex"
-path.etc2="res://.godot/imported/turn_Brick Tile 2 Normal.png-dc226b57dd9766ba331cda2da9a824b2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/turn_Brick Tile 2 Normal.png"
-dest_files=["res://.godot/imported/turn_Brick Tile 2 Normal.png-dc226b57dd9766ba331cda2da9a824b2.s3tc.ctex", "res://.godot/imported/turn_Brick Tile 2 Normal.png-dc226b57dd9766ba331cda2da9a824b2.etc2.ctex"]
+dest_files=["res://.godot/imported/turn_Brick Tile 2 Normal.png-dc226b57dd9766ba331cda2da9a824b2.s3tc.ctex"]
 
 [params]
 
