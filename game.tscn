@@ -7,7 +7,7 @@
 [ext_resource type="Shader" uid="uid://c1j5e7x1kqyca" path="res://sky.gdshader" id="4_rou8h"]
 [ext_resource type="Script" uid="uid://b2a043g1op6ux" path="res://camera_follow.gd" id="5_66ayd"]
 [ext_resource type="PackedScene" uid="uid://daoh2rehmopr8" path="res://blocks/alley.tscn" id="6_mfdv2"]
-[ext_resource type="PackedScene" path="res://blocks/Curved.tscn" id="7_215e1"]
+[ext_resource type="PackedScene" uid="uid://6yeuwhylix3d" path="res://blocks/Curved.tscn" id="7_215e1"]
 [ext_resource type="PackedScene" uid="uid://ch4uo2sn16kfx" path="res://blocks/narrow.tscn" id="8_7sc4i"]
 [ext_resource type="PackedScene" uid="uid://rj4nfw041n4n" path="res://blocks/decline.tscn" id="10_rvswv"]
 [ext_resource type="PackedScene" uid="uid://bv0joj4iyha87" path="res://blocks/turn.tscn" id="12_e36ub"]
@@ -23,12 +23,12 @@ shader_parameter/exponent_factor_top = 1.0
 shader_parameter/exponent_factor_bottom = 54.521
 shader_parameter/intensity_amp = 1.0
 
-[sub_resource type="Sky" id="Sky_3arfg"]
+[sub_resource type="Sky" id="Sky_lc2xo"]
 sky_material = SubResource("ShaderMaterial_6k52l")
 
 [sub_resource type="Environment" id="Environment_abiha"]
 background_mode = 2
-sky = SubResource("Sky_3arfg")
+sky = SubResource("Sky_lc2xo")
 ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 2
 tonemap_mode = 1
@@ -72,7 +72,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 
 [node name="Player" type="CharacterBody3D" parent="PlayerParent" unique_id=364912276 node_paths=PackedStringArray("raycast_area", "wind", "dead_player")]
 motion_mode = 1
 script = ExtResource("1_ccuye")
-drag_constant = 0.01
 raycast_area = NodePath("../RaycastArea")
 play_area_bounds = Vector2(20, 20)
 wind = NodePath("Wind")

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyg5nvym415r5"
 path.s3tc="res://.godot/imported/Dirty Stone Slab Wall 1.png-c3edeeb097a7b760bc494727c1f030d4.s3tc.ctex"
+path.etc2="res://.godot/imported/Dirty Stone Slab Wall 1.png-c3edeeb097a7b760bc494727c1f030d4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://materials/textures/Dirty Stone Slab Wall 1.png"
-dest_files=["res://.godot/imported/Dirty Stone Slab Wall 1.png-c3edeeb097a7b760bc494727c1f030d4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dirty Stone Slab Wall 1.png-c3edeeb097a7b760bc494727c1f030d4.s3tc.ctex", "res://.godot/imported/Dirty Stone Slab Wall 1.png-c3edeeb097a7b760bc494727c1f030d4.etc2.ctex"]
 
 [params]
 
