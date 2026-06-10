@@ -14,28 +14,34 @@ func toonify(node: Node, base_material: ShaderMaterial, material_map: Dictionary
     if node is MeshInstance3D:
         for i in range(node.mesh.get_surface_count()):
             var existing_material = node.mesh.surface_get_material(i)
+
+            # Guard against null materials
+            if existing_material == null:
+                push_warning("Surface %d on '%s' has no material, skipping." % [i, node.name])
+                continue
+
             if existing_material.resource_name == "Glass":
                 if randf_range(0.0, 1.0) < 0.5:
-                    node.mesh.surface_set_material(i, preload(LIGHTS_OFF_MATERIAL))
+                    node.set_surface_override_material(i, preload(LIGHTS_OFF_MATERIAL))
                 else:
-                    node.mesh.surface_set_material(i, preload(LIGHTS_ON_MATERIAL))
+                    node.set_surface_override_material(i, preload(LIGHTS_ON_MATERIAL))
             elif existing_material.resource_name in material_map:
-                node.mesh.surface_set_material(i, material_map[existing_material.resource_name])
+                node.set_surface_override_material(i, material_map[existing_material.resource_name])
             else:
                 if existing_material is StandardMaterial3D:
                     var new_material = base_material.duplicate()
                     new_material.set_shader_parameter("albedo_color", existing_material.albedo_color)
                     new_material.set_shader_parameter("albedo_texture", existing_material.albedo_texture)
-                    # new_material.set_shader_parameter("albedo_affect", 1.0)
                     new_material.set_shader_parameter("specular", 1.0 - existing_material.roughness)
                     if existing_material.normal_texture:
                         new_material.set_shader_parameter("normal_strength", 0.5)
                         new_material.set_shader_parameter("normal_texture", existing_material.normal_texture)
                     new_material.set_shader_parameter("emissive_color", existing_material.emission if existing_material.emission_enabled else Color(0, 0, 0))
                     new_material.set_shader_parameter("emissive_strength", 1.0 if existing_material.emission_enabled else 0.0)
-                    node.mesh.surface_set_material(i, new_material)
+                    node.set_surface_override_material(i, new_material)  # ✅ fixed
                     material_map[existing_material.resource_name] = new_material
                 else:
-                    push_warning("Warning: MeshInstance3D has non-StandardMaterial3D material, skipping toonification for that material.")
+                    push_warning("'%s' surface %d is not a StandardMaterial3D, skipping." % [node.name, i])
+
     for child in node.get_children():
         toonify(child, base_material, material_map)

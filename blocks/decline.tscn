@@ -15,3 +15,36 @@ next_block_offset = Vector3(10, -1.5, -2.5)
 
 [node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=2013043097]
 curve = SubResource("Curve3D_vfkw8")
+
+[node name="Body" parent="Lamp Post_012" parent_id_path=PackedInt32Array(229532308) index="0" unique_id=1743600118]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_012" parent_id_path=PackedInt32Array(229532308) index="1" unique_id=1324610282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Body2" parent="Lamp Post_013" parent_id_path=PackedInt32Array(199955458) index="0" unique_id=897713368]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_013" parent_id_path=PackedInt32Array(199955458) index="1" unique_id=2130524422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Body3" parent="Lamp Post_014" parent_id_path=PackedInt32Array(1640471242) index="0" unique_id=1965271048]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_014" parent_id_path=PackedInt32Array(1640471242) index="1" unique_id=1267380680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
