@@ -5,7 +5,7 @@ class_name CityGenerator
 @export var city_blocks : Array[PackedScene] 
 @export var buildings : Array[PackedScene]
 @export var building_materials : Array[Material]
-# @export var obstacles : Array[PackedScene]
+@export var obstacles : Array[PackedScene]
 @export var starting_speed := 1.
 @export var speed_increase_rate := 0.2
 @export var perspective_reference : Node3D
@@ -33,7 +33,8 @@ func _ready() -> void:
 	speed = starting_speed
 
 func _process(delta: float) -> void:
-	path_distance += speed * rotation_speed_mult * delta
+	if Global.player.alive:
+		path_distance += speed * rotation_speed_mult * delta
 	if (path_distance > current_path.curve.get_baked_length()):
 		pop_block()
 		add_block()

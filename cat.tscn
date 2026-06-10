@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rnjrm80uce7s"]
+
+[ext_resource type="Script" uid="uid://cbyn3gsnpd30a" path="res://cat.gd" id="1_52fj1"]
+[ext_resource type="PackedScene" uid="uid://b0n77k47wewr8" path="res://meshes/characters/cat.glb" id="2_6fl1u"]
+
+[node name="Cat" type="Node3D" unique_id=1709832629]
+script = ExtResource("1_52fj1")
+
+[node name="cat" parent="." unique_id=1391765899 instance=ExtResource("2_6fl1u")]
