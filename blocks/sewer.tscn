@@ -2,114 +2,21 @@
 
 [ext_resource type="PackedScene" uid="uid://cjwv7dgbkm6bl" path="res://meshes/blocks/sewer.glb" id="1_55yhn"]
 
-[sub_resource type="Curve3D" id="Curve3D_2p5dc"]
+[sub_resource type="Curve3D" id="Curve3D_pctsl"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 1, 0, 0, -1.225, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -1.909, 0, 0, 0, 0, 0, 0, 1.215, 0, -3.5, 0, 0, 0, 0, 0, 0, 5, 0, -3.5),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
 
-[node name="Sewer" unique_id=839653939 node_paths=PackedStringArray("player_path") instance=ExtResource("1_55yhn")]
+[node name="Sewer" unique_id=672025495 node_paths=PackedStringArray("player_path") instance=ExtResource("1_55yhn")]
 player_path = NodePath("Path3D")
 next_block_offset = Vector3(10, 0, -3.5)
 
-[node name="SewerStreet" parent="." index="1" unique_id=735685390]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-
-[node name="Cube_048" parent="." index="2" unique_id=364631737]
-surface_material_override/0 = null
-surface_material_override/1 = null
-
-[node name="Cube_049" parent="." index="3" unique_id=1219433951]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-surface_material_override/3 = null
-surface_material_override/4 = null
-
-[node name="Cube_053" parent="." index="4" unique_id=1816629077]
-surface_material_override/0 = null
-surface_material_override/1 = null
-
-[node name="Cube_050" parent="." index="5" unique_id=584580499]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-surface_material_override/3 = null
-surface_material_override/4 = null
-
-[node name="Cube_051" parent="." index="6" unique_id=1031489934]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-surface_material_override/3 = null
-surface_material_override/4 = null
-
-[node name="Cube_052" parent="." index="7" unique_id=589797690]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-surface_material_override/3 = null
-surface_material_override/4 = null
-
-[node name="Cube_055" parent="." index="8" unique_id=1006936073]
-surface_material_override/0 = null
-surface_material_override/1 = null
-
-[node name="Untitled_Artwork" parent="." index="9" unique_id=1154385404]
-surface_material_override/0 = null
-
-[node name="Path3D" type="Path3D" parent="." index="10" unique_id=1394806246]
-curve = SubResource("Curve3D_2p5dc")
-
-[node name="Untitled_Artwork_001" parent="." index="11" unique_id=621943149]
-surface_material_override/0 = null
-
-[node name="Untitled_Artwork_002" parent="." index="12" unique_id=1044868849]
-surface_material_override/0 = null
-
-[node name="Cube_054" parent="." index="13" unique_id=1245025817]
-surface_material_override/0 = null
-surface_material_override/1 = null
-
-[node name="funky_kidz" parent="funky_kidz_001" parent_id_path=PackedInt32Array(960375085) index="0" unique_id=266867975]
-surface_material_override/0 = null
-
-[node name="pride" parent="pride_001" parent_id_path=PackedInt32Array(1236027499) index="0" unique_id=1371614591]
-surface_material_override/0 = null
-
-[node name="pride2" parent="pride_002" parent_id_path=PackedInt32Array(323615075) index="0" unique_id=1499359948]
-surface_material_override/0 = null
-
-[node name="Cube_056" parent="." index="17" unique_id=294709600]
-surface_material_override/0 = null
-
-[node name="Cube_059" parent="." index="18" unique_id=1836148581]
-surface_material_override/0 = null
-
-[node name="Cube_060" parent="." index="19" unique_id=1166785961]
-surface_material_override/0 = null
-
-[node name="Cube_061" parent="." index="20" unique_id=1820678428]
-surface_material_override/0 = null
-
-[node name="Cube_058" parent="." index="21" unique_id=1327061407]
-surface_material_override/0 = null
-surface_material_override/1 = null
-surface_material_override/2 = null
-
-[node name="trash" parent="trash_001" parent_id_path=PackedInt32Array(1974894507) index="0" unique_id=1697688566]
-surface_material_override/0 = null
-surface_material_override/1 = null
-
-[node name="Body" parent="Lamp Post_003" parent_id_path=PackedInt32Array(2140716627) index="0" unique_id=348741210]
+[node name="Body" parent="Lamp Post_003" parent_id_path=PackedInt32Array(19261652) index="0" unique_id=883330195]
 layers = 2
-surface_material_override/0 = null
-surface_material_override/1 = null
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_003" parent_id_path=PackedInt32Array(2140716627) index="1" unique_id=468035216]
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_003" parent_id_path=PackedInt32Array(19261652) index="1" unique_id=156036349]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
 light_energy = 3.0
 shadow_enabled = true
@@ -117,77 +24,38 @@ shadow_caster_mask = 4294967293
 omni_range = 50.0
 omni_attenuation = 0.5
 
-[node name="papercuts" parent="papercuts_001" parent_id_path=PackedInt32Array(289636458) index="0" unique_id=339940191]
-surface_material_override/0 = null
+[node name="Path3D" type="Path3D" parent="." index="37" unique_id=485869765]
+curve = SubResource("Curve3D_pctsl")
 
-[node name="pride3" parent="pride_003" parent_id_path=PackedInt32Array(375062234) index="0" unique_id=1987281780]
-surface_material_override/0 = null
-
-[node name="pride4" parent="pride_004" parent_id_path=PackedInt32Array(1373612081) index="0" unique_id=2078025780]
-surface_material_override/0 = null
-
-[node name="pride5" parent="pride_005" parent_id_path=PackedInt32Array(1533517488) index="0" unique_id=1792513785]
-surface_material_override/0 = null
-
-[node name="yard_sale" parent="yard_sale_001" parent_id_path=PackedInt32Array(1715230087) index="0" unique_id=1737721935]
-surface_material_override/0 = null
-
-[node name="yard_sale2" parent="yard_sale_002" parent_id_path=PackedInt32Array(1014384209) index="0" unique_id=433369598]
-surface_material_override/0 = null
-
-[node name="yard_sale3" parent="yard_sale_003" parent_id_path=PackedInt32Array(443092099) index="0" unique_id=861856393]
-surface_material_override/0 = null
-
-[node name="yard_sale4" parent="yard_sale_004" parent_id_path=PackedInt32Array(1565412899) index="0" unique_id=1844857600]
-surface_material_override/0 = null
-
-[node name="nightclub" parent="nightclub_001" parent_id_path=PackedInt32Array(1727822617) index="0" unique_id=1079656894]
-surface_material_override/0 = null
-
-[node name="nightclub2" parent="nightclub_002" parent_id_path=PackedInt32Array(472121950) index="0" unique_id=645171834]
-surface_material_override/0 = null
-
-[node name="nightclub3" parent="nightclub_003" parent_id_path=PackedInt32Array(1405112195) index="0" unique_id=1962127600]
-surface_material_override/0 = null
-
-[node name="nightclub4" parent="nightclub_004" parent_id_path=PackedInt32Array(37769408) index="0" unique_id=42260944]
-surface_material_override/0 = null
-
-[node name="nightclub5" parent="nightclub_005" parent_id_path=PackedInt32Array(284528952) index="0" unique_id=2108828898]
-surface_material_override/0 = null
-
-[node name="nightclub6" parent="nightclub_006" parent_id_path=PackedInt32Array(1935983713) index="0" unique_id=784836968]
-surface_material_override/0 = null
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." index="38" unique_id=1776891742]
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="38" unique_id=1725142867]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7988615, -0.3452393, 0)
 light_color = Color(1, 0, 0, 1)
 light_energy = 5.0
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." index="39" unique_id=1343995742]
+[node name="OmniLight3D2" type="OmniLight3D" parent="." index="39" unique_id=863697270]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8535247, 0.0845674, -3.292907)
 light_color = Color(1, 0, 0, 1)
 light_energy = 5.0
 
-[node name="SpotLight3D" type="SpotLight3D" parent="." index="40" unique_id=1187816117]
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="40" unique_id=1972416571]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.57810277, -0.098223165)
 light_energy = 20.0
 shadow_enabled = true
 spot_attenuation = 0.1
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="." index="41" unique_id=8265518]
+[node name="SpotLight3D2" type="SpotLight3D" parent="." index="41" unique_id=2086153836]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.57810277, -3.2722356)
 light_energy = 20.0
 shadow_enabled = true
 spot_attenuation = 0.1
 
-[node name="SpotLight3D3" type="SpotLight3D" parent="." index="42" unique_id=1687503194]
+[node name="SpotLight3D3" type="SpotLight3D" parent="." index="42" unique_id=2042595755]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.57810277, -6.2827015)
 light_energy = 20.0
 shadow_enabled = true
 spot_attenuation = 0.1
 
-[node name="SpotLight3D4" type="SpotLight3D" parent="." index="43" unique_id=621704927]
+[node name="SpotLight3D4" type="SpotLight3D" parent="." index="43" unique_id=436515396]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.57810277, -9.253346)
 light_energy = 20.0
 shadow_enabled = true
