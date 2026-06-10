@@ -1,17 +1,50 @@
-[gd_scene format=3 uid="uid://dqi13cp7ycv4i"]
+[gd_scene format=3 uid="uid://6yeuwhylix3d"]
 
-[ext_resource type="PackedScene" uid="uid://c8efa1sla4ys6" path="res://meshes/blocks/curved.glb" id="1_g7xni"]
+[ext_resource type="PackedScene" uid="uid://c8efa1sla4ys6" path="res://meshes/blocks/curved.glb" id="1_2mbb7"]
 
-[sub_resource type="Curve3D" id="Curve3D_g7xni"]
+[sub_resource type="Curve3D" id="Curve3D_oncyw"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
-[node name="Curved" unique_id=1859627078 node_paths=PackedStringArray("player_path") instance=ExtResource("1_g7xni")]
+[node name="Curved" unique_id=978061003 node_paths=PackedStringArray("player_path") instance=ExtResource("1_2mbb7")]
 player_path = NodePath("PlayerPath")
 next_block_offset = Vector3(10, 0, 0)
 
-[node name="PlayerPath" type="Path3D" parent="." index="5" unique_id=1703703863]
-curve = SubResource("Curve3D_g7xni")
+[node name="Body" parent="Lamp Post_007" parent_id_path=PackedInt32Array(53843335) index="0" unique_id=666794062]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_007/Body" index="0" unique_id=1261074172]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 1.6037264, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Body2" parent="Lamp Post_008" parent_id_path=PackedInt32Array(570105989) index="0" unique_id=239187441]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_008/Body2" index="0" unique_id=2084515976]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 1.6037264, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Body3" parent="Lamp Post_009" parent_id_path=PackedInt32Array(1662937408) index="0" unique_id=182797656]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_009/Body3" index="0" unique_id=1341624689]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 1.6037264, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="PlayerPath" type="Path3D" parent="." index="29" unique_id=2058155621]
+curve = SubResource("Curve3D_oncyw")

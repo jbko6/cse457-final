@@ -5,6 +5,9 @@ uniform vec4 albedo_color : source_color  = vec4(1.0);
 uniform sampler2D albedo_texture;
 uniform float albedo_affect : hint_range(0.0, 1.0, 0.05) = 0.0;
 
+group_uniforms Shader.Alpha;
+uniform float alpha_threshold : hint_range(0.0, 1.0, 0.05) = 0.5;
+
 group_uniforms Shader.Light;
 uniform bool use_stepped = true;
 uniform float steps = 3.0;
@@ -72,6 +75,12 @@ void fragment() {
 	vec4 emission = emissive_color * emissive_strength;
 
 	ALBEDO = albedo.rgb;
+
+	if (albedo.a != 1.0) {
+		ALPHA = albedo.a;
+		ALPHA_SCISSOR_THRESHOLD = alpha_threshold;
+	}
+
 
 	NORMAL_MAP = mix(vec3(0.5,0.5,1.0), normal_map.rgb, normal_strength);
 

@@ -7,8 +7,9 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_roy61")
-shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_color = Color(0.3647059, 0.41960785, 0.50980395, 1)
 shader_parameter/albedo_affect = 0.0
+shader_parameter/alpha_threshold = 0.5
 shader_parameter/use_stepped = true
 shader_parameter/steps = 3.0
 shader_parameter/step_smoothness = 0.3
