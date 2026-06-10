@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/rat.glb-c5f6a6e878c1a94d1328ace8ab08ad9d.scn"
 
 nodes/root_type=""
 nodes/root_name=""
-nodes/root_script=null
+nodes/root_script=Resource("uid://dmgejuf7vwkl4", "res://characters/walker.gd")
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
@@ -33,7 +33,7 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
-import_script/path=""
+import_script/path="uid://dsm5ecxi2mmeu"
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""

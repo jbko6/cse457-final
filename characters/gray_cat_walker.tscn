@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dmtuhpnoirdh0"]
+
+[ext_resource type="PackedScene" uid="uid://b0n77k47wewr8" path="res://meshes/characters/cat.glb" id="2_wjp74"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ekii6"]
+size = Vector3(1.7043457, 2.9655151, 0.18457031)
+
+[node name="cat" unique_id=665385762 node_paths=PackedStringArray("animation_player") instance=ExtResource("2_wjp74")]
+animation_player = NodePath("AnimationPlayer")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2" unique_id=1094168492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.25768423)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1324961879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010131836, 1.5521545, 0)
+shape = SubResource("BoxShape3D_ekii6")

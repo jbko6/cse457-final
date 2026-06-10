@@ -1,10 +1,28 @@
 [gd_scene format=3 uid="uid://rj4nfw041n4n"]
 
 [ext_resource type="PackedScene" uid="uid://c7yec34adsys8" path="res://meshes/blocks/decline.glb" id="1_y6le8"]
+[ext_resource type="PackedScene" uid="uid://pulwwwww4yg6" path="res://characters/orange_cat_walker.tscn" id="2_sp1na"]
+[ext_resource type="PackedScene" uid="uid://cwoeimqpvq3q8" path="res://characters/monkey_walker.tscn" id="3_fyux4"]
+[ext_resource type="PackedScene" uid="uid://0lgvstvsnu64" path="res://characters/white_cat_walker.tscn" id="3_hk3kc"]
+[ext_resource type="PackedScene" uid="uid://c0p34y6jwasey" path="res://characters/sitting_gray_cat.tscn" id="5_6qim0"]
 
 [sub_resource type="Curve3D" id="Curve3D_vfkw8"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 2, 0, 0, -5, 0, 0, -2, 0, 0, 0, 0, 0, 5, -1.5, -2.5),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_6qim0"]
+_data = {
+"points": PackedVector3Array(-2, 0, 0, -2.115, 0, 0, 5, -1.5, -2.5, 3.175, 0, 0, 2, 0, 0, -5, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_fyux4"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 2, 0, 0, -3.64, -0.16, 0, -2, 0, 0, 0, 0, 0, 5, -1.5, -2.5),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -15,6 +33,28 @@ next_block_offset = Vector3(10, -1.5, -2.5)
 
 [node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=2013043097]
 curve = SubResource("Curve3D_vfkw8")
+
+[node name="PlayerPath2" type="Path3D" parent="." index="3" unique_id=402666283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.9821534)
+curve = SubResource("Curve3D_vfkw8")
+
+[node name="cat" parent="PlayerPath2" index="0" unique_id=665385762 instance=ExtResource("2_sp1na")]
+transform = Transform3D(1.4424758e-08, 0, 0.33, 0, 0.33, 0, -0.33, 0, 1.4424758e-08, -5, 0, 0)
+speed = 0.05
+
+[node name="PlayerPath4" type="Path3D" parent="." index="4" unique_id=160758915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5760312)
+curve = SubResource("Curve3D_6qim0")
+
+[node name="monkey" parent="PlayerPath4" index="0" unique_id=2098841757 instance=ExtResource("3_fyux4")]
+transform = Transform3D(1.4424758e-08, 0, -0.33, 0, 0.33, 0, 0.33, 0, 1.4424758e-08, 5, -1.5, -2.5)
+
+[node name="PlayerPath3" type="Path3D" parent="." index="5" unique_id=1393215476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.20424962)
+curve = SubResource("Curve3D_fyux4")
+
+[node name="cat" parent="PlayerPath3" index="0" unique_id=418874231 instance=ExtResource("3_hk3kc")]
+transform = Transform3D(1.4424758e-08, 0, 0.33, 0, 0.33, 0, -0.33, 0, 1.4424758e-08, -3.64, -0.16, 0)
 
 [node name="Body" parent="Lamp Post_012" parent_id_path=PackedInt32Array(229532308) index="0" unique_id=1743600118]
 layers = 2
@@ -48,3 +88,6 @@ shadow_enabled = true
 shadow_caster_mask = 4294967293
 omni_range = 50.0
 omni_attenuation = 0.5
+
+[node name="cat" parent="." index="37" unique_id=1929706634 instance=ExtResource("5_6qim0")]
+transform = Transform3D(-0.33, 0, -2.8849517e-08, 0, 0.33, 0, 2.8849517e-08, 0, -0.33, 4.2599573, -1.2785256, -0.26296884)
