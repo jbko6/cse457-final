@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cla2xhjaojq05"
-path.s3tc="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex"
-path.etc2="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"
+uid="uid://33fewfmk0npp"
+path.s3tc="res://.godot/imported/sewer_Image.png-53154447836bc418cfcde6e5373214f6.s3tc.ctex"
+path.etc2="res://.godot/imported/sewer_Image.png-53154447836bc418cfcde6e5373214f6.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "8597d4e7e65352a302b63e07bc01a7da"
+}
 
 [deps]
 
-source_file="res://meshes/characters/rat_BlackRat-Color.png"
-dest_files=["res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex", "res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"]
+source_file="res://meshes/blocks/sewer_Image.png"
+dest_files=["res://.godot/imported/sewer_Image.png-53154447836bc418cfcde6e5373214f6.s3tc.ctex", "res://.godot/imported/sewer_Image.png-53154447836bc418cfcde6e5373214f6.etc2.ctex"]
 
 [params]
 

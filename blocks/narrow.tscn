@@ -16,24 +16,38 @@ next_block_offset = Vector3(10, 0, 0)
 [node name="PlayerPath" type="Path3D" parent="." index="8" unique_id=794555511]
 curve = SubResource("Curve3D_eqoaj")
 
-[node name="Body" parent="Lamp Post_004" parent_id_path=PackedInt32Array(256958177) index="0" unique_id=1836629589]
+[node name="Body" parent="Lamp Post_004" parent_id_path=PackedInt32Array(72083054) index="0" unique_id=1392562552]
 layers = 2
 
-[node name="Body2" parent="Lamp Post_005" parent_id_path=PackedInt32Array(1733654998) index="0" unique_id=2046794057]
-layers = 2
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." index="24" unique_id=1980773286]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.594441, 1.6065836, -1.3925818)
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_004" parent_id_path=PackedInt32Array(72083054) index="1" unique_id=756295100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
 light_energy = 3.0
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 omni_range = 50.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." index="25" unique_id=1191346755]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6605515, 1.6065836, 0.888672)
+[node name="Body2" parent="Lamp Post_005" parent_id_path=PackedInt32Array(1162519634) index="0" unique_id=610140074]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_005" parent_id_path=PackedInt32Array(1162519634) index="1" unique_id=1069880695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
 light_energy = 3.0
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 omni_range = 50.0
 omni_attenuation = 0.5
+
+[node name="Body3" parent="Lamp Post_006" parent_id_path=PackedInt32Array(2059044568) index="0" unique_id=2062935766]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_006" parent_id_path=PackedInt32Array(2059044568) index="1" unique_id=582707129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.602, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Cylinder_007" parent="." index="44" unique_id=534668236]
+layers = 3

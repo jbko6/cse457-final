@@ -2,16 +2,38 @@
 
 [ext_resource type="PackedScene" uid="uid://4u83tontquwv" path="res://meshes/blocks/incline.glb" id="1_v3pj3"]
 
-[sub_resource type="Curve3D" id="Curve3D_saayt"]
+[sub_resource type="Curve3D" id="Curve3D_nni3t"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 2, 0, 0, -5, 0, 0, -2, 0, 0, 0, 0, 0, 5, 1, 0),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
-[node name="Incline" unique_id=1361960414 node_paths=PackedStringArray("player_path") instance=ExtResource("1_v3pj3")]
+[node name="Incline" unique_id=1021265739 node_paths=PackedStringArray("player_path") instance=ExtResource("1_v3pj3")]
 player_path = NodePath("PlayerPath")
 next_block_offset = Vector3(10, 1, 0)
 
-[node name="PlayerPath" type="Path3D" parent="." index="2" unique_id=1994595110]
-curve = SubResource("Curve3D_saayt")
+[node name="Body" parent="Lamp Post_015" parent_id_path=PackedInt32Array(1511446874) index="0" unique_id=556425520]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_015" parent_id_path=PackedInt32Array(1511446874) index="1" unique_id=1991974531]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 1.6037264, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="Body2" parent="Lamp Post_016" parent_id_path=PackedInt32Array(69457937) index="0" unique_id=8488182]
+layers = 2
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp Post_016/Body2" index="0" unique_id=104606142]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 1.6037264, 0)
+light_energy = 3.0
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 50.0
+omni_attenuation = 0.5
+
+[node name="PlayerPath" type="Path3D" parent="." index="35" unique_id=366487386]
+curve = SubResource("Curve3D_nni3t")

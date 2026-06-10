@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cla2xhjaojq05"
-path.s3tc="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex"
-path.etc2="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"
+uid="uid://edsx4enhc174"
+path.s3tc="res://.godot/imported/turn_Untitled_Artwork 8.png-ea95a7b95ffd743bde485582ca515609.s3tc.ctex"
+path.etc2="res://.godot/imported/turn_Untitled_Artwork 8.png-ea95a7b95ffd743bde485582ca515609.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "556dd74981fd0b557cfd4a7aa58ee1b8"
+}
 
 [deps]
 
-source_file="res://meshes/characters/rat_BlackRat-Color.png"
-dest_files=["res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex", "res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"]
+source_file="res://meshes/blocks/turn_Untitled_Artwork 8.png"
+dest_files=["res://.godot/imported/turn_Untitled_Artwork 8.png-ea95a7b95ffd743bde485582ca515609.s3tc.ctex", "res://.godot/imported/turn_Untitled_Artwork 8.png-ea95a7b95ffd743bde485582ca515609.etc2.ctex"]
 
 [params]
 

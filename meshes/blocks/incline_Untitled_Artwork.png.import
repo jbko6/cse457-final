@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cla2xhjaojq05"
-path.s3tc="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex"
-path.etc2="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"
+uid="uid://b7825apdtqjha"
+path.s3tc="res://.godot/imported/incline_Untitled_Artwork.png-e7ebb0793dc31b7d654e19e0e4957b0c.s3tc.ctex"
+path.etc2="res://.godot/imported/incline_Untitled_Artwork.png-e7ebb0793dc31b7d654e19e0e4957b0c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "24bd8a5f48a676b9349c20bf2e2096bc"
+}
 
 [deps]
 
-source_file="res://meshes/characters/rat_BlackRat-Color.png"
-dest_files=["res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex", "res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"]
+source_file="res://meshes/blocks/incline_Untitled_Artwork.png"
+dest_files=["res://.godot/imported/incline_Untitled_Artwork.png-e7ebb0793dc31b7d654e19e0e4957b0c.s3tc.ctex", "res://.godot/imported/incline_Untitled_Artwork.png-e7ebb0793dc31b7d654e19e0e4957b0c.etc2.ctex"]
 
 [params]
 

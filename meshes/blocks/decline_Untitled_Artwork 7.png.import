@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cla2xhjaojq05"
-path.s3tc="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex"
-path.etc2="res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"
+uid="uid://cut8uy56b10eo"
+path.s3tc="res://.godot/imported/decline_Untitled_Artwork 7.png-2723c9ad413ac4431b83c5f8c2505304.s3tc.ctex"
+path.etc2="res://.godot/imported/decline_Untitled_Artwork 7.png-2723c9ad413ac4431b83c5f8c2505304.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "4bb64060b1a5ec492558f597798d3be2"
+}
 
 [deps]
 
-source_file="res://meshes/characters/rat_BlackRat-Color.png"
-dest_files=["res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.s3tc.ctex", "res://.godot/imported/rat_BlackRat-Color.png-3aac619705153b56f9f8cc34c65aa79b.etc2.ctex"]
+source_file="res://meshes/blocks/decline_Untitled_Artwork 7.png"
+dest_files=["res://.godot/imported/decline_Untitled_Artwork 7.png-2723c9ad413ac4431b83c5f8c2505304.s3tc.ctex", "res://.godot/imported/decline_Untitled_Artwork 7.png-2723c9ad413ac4431b83c5f8c2505304.etc2.ctex"]
 
 [params]
 
