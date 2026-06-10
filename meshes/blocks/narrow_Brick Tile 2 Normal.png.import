@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx145n8o2e1nd"
 path.s3tc="res://.godot/imported/narrow_Brick Tile 2 Normal.png-e4ac56f4ed1d412abf2f37a3df15c1c1.s3tc.ctex"
-path.etc2="res://.godot/imported/narrow_Brick Tile 2 Normal.png-e4ac56f4ed1d412abf2f37a3df15c1c1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/narrow_Brick Tile 2 Normal.png"
-dest_files=["res://.godot/imported/narrow_Brick Tile 2 Normal.png-e4ac56f4ed1d412abf2f37a3df15c1c1.s3tc.ctex", "res://.godot/imported/narrow_Brick Tile 2 Normal.png-e4ac56f4ed1d412abf2f37a3df15c1c1.etc2.ctex"]
+dest_files=["res://.godot/imported/narrow_Brick Tile 2 Normal.png-e4ac56f4ed1d412abf2f37a3df15c1c1.s3tc.ctex"]
 
 [params]
 

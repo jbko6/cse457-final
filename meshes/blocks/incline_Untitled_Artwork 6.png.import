@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0ktlkb3xv0d5"
 path.s3tc="res://.godot/imported/incline_Untitled_Artwork 6.png-83abb375e2c2ac10b4a3ee072ba1752f.s3tc.ctex"
-path.etc2="res://.godot/imported/incline_Untitled_Artwork 6.png-83abb375e2c2ac10b4a3ee072ba1752f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/incline_Untitled_Artwork 6.png"
-dest_files=["res://.godot/imported/incline_Untitled_Artwork 6.png-83abb375e2c2ac10b4a3ee072ba1752f.s3tc.ctex", "res://.godot/imported/incline_Untitled_Artwork 6.png-83abb375e2c2ac10b4a3ee072ba1752f.etc2.ctex"]
+dest_files=["res://.godot/imported/incline_Untitled_Artwork 6.png-83abb375e2c2ac10b4a3ee072ba1752f.s3tc.ctex"]
 
 [params]
 

@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://24gfp82llwri"
 path.s3tc="res://.godot/imported/curved_Square Stone Tile 2 Normal.png-f70acf09dbcddec6e4333a80185aee4a.s3tc.ctex"
-path.etc2="res://.godot/imported/curved_Square Stone Tile 2 Normal.png-f70acf09dbcddec6e4333a80185aee4a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/curved_Square Stone Tile 2 Normal.png"
-dest_files=["res://.godot/imported/curved_Square Stone Tile 2 Normal.png-f70acf09dbcddec6e4333a80185aee4a.s3tc.ctex", "res://.godot/imported/curved_Square Stone Tile 2 Normal.png-f70acf09dbcddec6e4333a80185aee4a.etc2.ctex"]
+dest_files=["res://.godot/imported/curved_Square Stone Tile 2 Normal.png-f70acf09dbcddec6e4333a80185aee4a.s3tc.ctex"]
 
 [params]
 

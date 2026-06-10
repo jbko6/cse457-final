@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq7qmkulp35dd"
 path.s3tc="res://.godot/imported/curved_Elm-leaf-texture-976950816.png-57f18167022de75d968c141a8c21e21b.s3tc.ctex"
-path.etc2="res://.godot/imported/curved_Elm-leaf-texture-976950816.png-57f18167022de75d968c141a8c21e21b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/curved_Elm-leaf-texture-976950816.png"
-dest_files=["res://.godot/imported/curved_Elm-leaf-texture-976950816.png-57f18167022de75d968c141a8c21e21b.s3tc.ctex", "res://.godot/imported/curved_Elm-leaf-texture-976950816.png-57f18167022de75d968c141a8c21e21b.etc2.ctex"]
+dest_files=["res://.godot/imported/curved_Elm-leaf-texture-976950816.png-57f18167022de75d968c141a8c21e21b.s3tc.ctex"]
 
 [params]
 

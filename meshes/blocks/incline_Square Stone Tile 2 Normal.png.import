@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfbmmc0jcboby"
 path.s3tc="res://.godot/imported/incline_Square Stone Tile 2 Normal.png-4bc08fc75403d301739867b8ba897ea8.s3tc.ctex"
-path.etc2="res://.godot/imported/incline_Square Stone Tile 2 Normal.png-4bc08fc75403d301739867b8ba897ea8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/incline_Square Stone Tile 2 Normal.png"
-dest_files=["res://.godot/imported/incline_Square Stone Tile 2 Normal.png-4bc08fc75403d301739867b8ba897ea8.s3tc.ctex", "res://.godot/imported/incline_Square Stone Tile 2 Normal.png-4bc08fc75403d301739867b8ba897ea8.etc2.ctex"]
+dest_files=["res://.godot/imported/incline_Square Stone Tile 2 Normal.png-4bc08fc75403d301739867b8ba897ea8.s3tc.ctex"]
 
 [params]
 

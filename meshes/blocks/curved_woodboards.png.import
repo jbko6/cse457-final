@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://248wu4i6tixm"
 path.s3tc="res://.godot/imported/curved_woodboards.png-aac522c4e1ea3baf4dfd58c550981d44.s3tc.ctex"
-path.etc2="res://.godot/imported/curved_woodboards.png-aac522c4e1ea3baf4dfd58c550981d44.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/curved_woodboards.png"
-dest_files=["res://.godot/imported/curved_woodboards.png-aac522c4e1ea3baf4dfd58c550981d44.s3tc.ctex", "res://.godot/imported/curved_woodboards.png-aac522c4e1ea3baf4dfd58c550981d44.etc2.ctex"]
+dest_files=["res://.godot/imported/curved_woodboards.png-aac522c4e1ea3baf4dfd58c550981d44.s3tc.ctex"]
 
 [params]
 

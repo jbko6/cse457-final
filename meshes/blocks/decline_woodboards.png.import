@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3pgiysms7rq4"
 path.s3tc="res://.godot/imported/decline_woodboards.png-e45c4b54a94661522c0aab54a7512b7d.s3tc.ctex"
-path.etc2="res://.godot/imported/decline_woodboards.png-e45c4b54a94661522c0aab54a7512b7d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/decline_woodboards.png"
-dest_files=["res://.godot/imported/decline_woodboards.png-e45c4b54a94661522c0aab54a7512b7d.s3tc.ctex", "res://.godot/imported/decline_woodboards.png-e45c4b54a94661522c0aab54a7512b7d.etc2.ctex"]
+dest_files=["res://.godot/imported/decline_woodboards.png-e45c4b54a94661522c0aab54a7512b7d.s3tc.ctex"]
 
 [params]
 

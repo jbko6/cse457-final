@@ -4,9 +4,8 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf00q6mbim11s"
 path.s3tc="res://.godot/imported/narrow_leaf.png-2a5bd9d51d0531fd1ec349e30d7e5765.s3tc.ctex"
-path.etc2="res://.godot/imported/narrow_leaf.png-2a5bd9d51d0531fd1ec349e30d7e5765.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://meshes/blocks/narrow_leaf.png"
-dest_files=["res://.godot/imported/narrow_leaf.png-2a5bd9d51d0531fd1ec349e30d7e5765.s3tc.ctex", "res://.godot/imported/narrow_leaf.png-2a5bd9d51d0531fd1ec349e30d7e5765.etc2.ctex"]
+dest_files=["res://.godot/imported/narrow_leaf.png-2a5bd9d51d0531fd1ec349e30d7e5765.s3tc.ctex"]
 
 [params]
 
